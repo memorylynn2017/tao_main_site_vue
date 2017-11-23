@@ -1,0 +1,33 @@
+//margin,padding设值
+.pos-loop(@i, @n) when (@i <= @n) {
+	.mt@{i} {margin-top: unit(@i,px);}
+	.mb@{i} {margin-bottom: unit(@i,px);}
+	.ml@{i} {margin-left: unit(@i,px);}
+	.mr@{i} {margin-right: unit(@i,px);}
+	.pt@{i} {padding-top: unit(@i,px);}
+	.pb@{i} {padding-bottom: unit(@i,px);}
+	.pl@{i} {padding-left: unit(@i,px);}
+	.pr@{i} {padding-right: unit(@i,px);}
+	.pos-loop((@i + 5), @n);
+}
+
+.cmm-h-ul >li{float: left; display: inline-block;}
+.clearfix {
+    *height: 1%;
+    &:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden; 
+    }
+}
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+        padding: 0;
+    }
+}
+
+.pos-loop(5,50);
