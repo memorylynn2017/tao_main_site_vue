@@ -95,7 +95,12 @@
 
 
 <script>
+//注意这个公共JS插件在事VUE项目中的位置，如果其它组件都是都是以这个app.vue为入口模板，那么放在这里就没有问题，特别理解此层父子组件嵌套路由及视图的关系
+//以实现手机端不同页面之间的跳转。待续
 import "./assets/js/mui.min.js";
+// 1、vue操作数据并渲染视图在生命周期的各个组成部分及钩子函数...
+// 2、vue操作数据并渲染视图对DATA部分操作，双向数据绑定、组件之间数据传递等..
+// 3、模拟根据请求什么API，传递请求参数，响应回怎样的数据来.AJAX与后台数据(MOCK.JSON)的交互，建义引入axio...
 export default {
   name: "app",
   data() {
@@ -106,6 +111,7 @@ export default {
 };
 </script>
 <script>
+    // 相当于引入的一个外部的插件，在此主模板组件(APP.vue)中SCRIPT部分一般是用来进行VM或CONTROLLERS的:
     $(function (){
 		$('#btn_page').on('click',function(){
             var num = $(this).find('span').attr('num');
@@ -121,6 +127,7 @@ export default {
         })
 	});
 </script>
+    
 
 <style>
 #app {
