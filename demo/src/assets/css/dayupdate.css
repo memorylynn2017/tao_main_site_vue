@@ -1,0 +1,62 @@
+.dayupdateo {
+  margin-top: -40px;
+}
+
+.dayupdateo strong{
+  position: relative;
+  top: -10px;
+}
+.dayupdateo.mui-content > .mui-table-view:first-child {
+  margin-top: 0;
+}
+.dayupdateo .selectbox {
+  padding: 3px 0;
+  background: #fdfdfd;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+.dayupdateo .selectbox.mui-grid-9 .mui-table-view-cell {
+  padding: 5px;
+  text-align: left;
+  border: none;
+}
+.dayupdateo .selectbox.mui-grid-9 .mui-table-view-cell span:first-child {
+  font-size: 0.85em;
+}
+.dayupdateo .selectbox.mui-grid-9 .mui-media .mui-icon {
+  font-size: 1em;
+}
+.dayupdateo .selectbox .mui-table-view-cell:nth-child(3) {
+  border-right: 1px solid #e6e6e6;
+}
+.dayupdateo .selectbox.mui-grid-9 .mui-media .mui-icon.mui-icon-home {
+  font-size: 1.2em;
+}
+.dayupdateo .selectbox.mui-grid-9 .mui-table-view-cell > a:not(.mui-btn) {
+  padding: 0;
+}
+.dayupdateo .num {
+  line-height: 34px;
+  text-align: center;
+  background: #fff;
+  margin: 0;
+}
+.dayupdateo .procuctbox {
+  border: none!important;
+}
+.dayupdateo .procuctbox .mui-table-view-cell .mui-media-body {
+  font-size: 12px;
+  color: #323232;
+  line-height: 17px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 2px 0;
+}
+.dayupdateo .procuctbox .mui-table-view-cell .price {
+  font-size: 14px;
+  color: #e51c23;
+  line-height: 20px;
+  text-align: left;
+}
