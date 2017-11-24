@@ -128,7 +128,7 @@ export default {
   border-bottom: 1px solid #e6e6e6;
 }
 .dayupdateo .selectbox.mui-grid-9 .mui-table-view-cell {
-  padding: 5px;
+  padding: 5px 0;
   text-align: left;
   border: none;
 }
