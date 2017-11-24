@@ -6,23 +6,17 @@
         <div class="mui-content mb50">
             <!-- 分类导航 -->
             <ul class="mui-table-view mui-grid-view top-noline bottom-noline te-table-view">
-                <li class="mui-table-view-cell mui-media mui-col-xs-2">
-                    <a href="javascript:;">女装</a>
+                <li class="mui-table-view-cell mui-media mui-col-xs-3">
+                    <a href="javascript:;">每日最新</a>
                 </li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-2">
-                    <a href="javascript:;">男装</a>
+                <li class="mui-table-view-cell mui-media mui-col-xs-3">
+                    <a href="javascript:;">优质商家</a>
                 </li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-2">
-                    <a href="javascript:;">童装</a>
+                <li class="mui-table-view-cell mui-media mui-col-xs-3">
+                    <a href="javascript:;">TOP100</a>
                 </li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-2">
-                    <a href="javascript:;">内衣</a>
-                </li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-2">
-                    <a href="javascript:;">鞋帽</a>
-                </li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-2">
-                    <a href="javascript:;">箱包</a>
+                <li class="mui-table-view-cell mui-media mui-col-xs-3">
+                    <a href="javascript:;">6块6清仓</a>
                 </li>
             </ul>
 
@@ -65,78 +59,73 @@
                 </div>
             </div>
 
-            <!-- 分类导航2 -->
-            <ul class="mui-table-view mui-grid-view top-noline bottom-noline te-table-view te-navlist2">
-                <li class="mui-table-view-cell mui-media mui-col-xs-3">
+            <!-- 图标分类导航 -->
+            <ul class="mui-table-view mui-grid-view top-noline bottom-noline te-table-view te-navlist">
+                <li class="mui-table-view-cell">
                     <a href="/M_daynews">
-                        <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1197/11971719/raw_1503045357.jpeg" alt=""></span>
-                        <span class="label">每日新款</span>
+                        <span class="icon"><img src="/src/assets/images/type.jpg" alt=""></span>
+                        <span class="label">女装</span>
                     </a>
                 </li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-3">
+                <li class="mui-table-view-cell">
                     <a href="javascript:;">
                         <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1252/12524601/raw_1504850996.jpeg" alt=""></span>
-                        <span class="label">优质商家</span>
+                        <span class="label">套装</span>
                     </a>
                 </li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-3">
+                <li class="mui-table-view-cell">
                     <a href="javascript:;">
                         <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1193/11938059/raw_1502955822.jpeg" alt=""></span>
-                        <span class="label">TOP100</span>
+                        <span class="label">鞋子</span>
                     </a>
                 </li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-3">
+                <li class="mui-table-view-cell">
                     <a href="javascript:;">
                         <span class="icon"><img src="https://pro.modao.cc//uploads3/images/1197/11971719/raw_1503045357.jpeg" alt=""></span>
-                        <span class="label">6块6特批</span>
+                        <span class="label">美妆个护</span>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a href="javascript:;">
+                        <span class="icon"><img src="https://pro.modao.cc//uploads3/images/1197/11971719/raw_1503045357.jpeg" alt=""></span>
+                        <span class="label">男装</span>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a href="/M_daynews">
+                        <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1197/11971719/raw_1503045357.jpeg" alt=""></span>
+                        <span class="label">家居/食品</span>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a href="javascript:;">
+                        <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1252/12524601/raw_1504850996.jpeg" alt=""></span>
+                        <span class="label">包包/配饰</span>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a href="javascript:;">
+                        <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1193/11938059/raw_1502955822.jpeg" alt=""></span>
+                        <span class="label">内衣裤祙</span>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a href="javascript:;">
+                        <span class="icon"><img src="https://pro.modao.cc//uploads3/images/1197/11971719/raw_1503045357.jpeg" alt=""></span>
+                        <span class="label">童装</span>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a href="javascript:;">
+                        <span class="icon"><img src="https://pro.modao.cc//uploads3/images/1197/11971719/raw_1503045357.jpeg" alt=""></span>
+                        <span class="label">瘦身运行</span>
                     </a>
                 </li>
             </ul>
 
             <!-- 每日更新 -->
             <div class="daynew mt10">
-                <ul class="mui-table-view">
-                    <li class="mui-table-view-cell top">
-                        <a class="mui-navigate-right">
-                            <span class="mui-icon mui-icon-paperplane"></span>今日上新 1303</a>
-                    </li>
-                </ul>
-                <ul class="mui-table-view mui-grid-view containcolmn">
-                    <li class="mui-table-view-cell mui-media mui-col-xs-4">
-                        <a href="#">
-                            <img class="mui-media-object" src="/src/assets/images/shuijiao.jpg">
-                            <div class="mui-media-body">￥43.00</div>
-                        </a>
-                    </li>
-                    <li class="mui-table-view-cell mui-media mui-col-xs-4">
-                        <a href="#">
-                            <img class="mui-media-object" src="/src/assets/images/muwu.jpg">
-                            <div class="mui-media-body">￥43.00</div>
-                        </a>
-                    </li>
-                    <li class="mui-table-view-cell mui-media mui-col-xs-4">
-                        <a href="#"><img class="mui-media-object" src="/src/assets/images/cbd.jpg">
-                            <div class="mui-media-body">￥43.00</div>
-                        </a>
-                    </li>
-                </ul>
                 <ul class="mui-table-view rowpic">
-                    <li class="mui-table-view-cell mui-media">
-                        <a href="javascript:;">
-                            <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
-                            <div class="mui-media-body">
-                                <p class="title">2020#2017新款圆领修身蕾丝连衣裙女夏 高腰绣花短裙荷叶边裙子</p>
-                                <p class='des mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
-                                <p class="price">
-                                    <span class="now">￥50.00</span>
-                                    <span class="old">￥55.00</span>
-                                </p>
-                                <div class="btn">
-                                    <button type="button" class="mui-btn">推荐商品</button>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
                     <li class="mui-table-view-cell mui-media">
                         <a href="javascript:;">
                             <img class="mui-media-object mui-pull-left" src="/src/assets/images/muwu.jpg">
@@ -180,42 +169,60 @@
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
                         <a href="#">
                             <img class="mui-media-object" src="/src/assets/images/shuijiao.jpg">
-                            <div class="mui-media-body">幸福就是可以一起睡觉</div>
-                            <div class="price">￥25.00</div>
+                            <div class="mui-media-body">幸福就是可以一起睡觉幸福就是可以一起睡觉幸福就是可以一起睡觉幸福就是可以一起睡觉</div>
+                            <div class="other clearfix">
+                                <span class="price">￥25.00</span>
+                                <span class="num">已批253件</span>
+                            </div>
                         </a>
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
                         <a href="#">
                             <img class="mui-media-object" src="/src/assets/images/muwu.jpg">
                             <div class="mui-media-body">想要一间这样的木屋，静静的喝咖啡</div>
-                            <div class="price">￥25.00</div>
+                            <div class="other clearfix">
+                                <span class="price">￥25.00</span>
+                                <span class="num">已批253件</span>
+                            </div>
                         </a>
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
                         <a href="#"><img class="mui-media-object" src="/src/assets/images/cbd.jpg">
                             <div class="mui-media-body">Color of SIP CBD</div>
-                            <div class="price">￥25.00</div>
+                            <div class="other clearfix">
+                                <span class="price">￥25.00</span>
+                                <span class="num">已批253件</span>
+                            </div>
                         </a>
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
                         <a href="#">
                             <img class="mui-media-object" src="/src/assets/images/yuantiao.jpg">
                             <div class="mui-media-body">静静看这世界</div>
-                            <div class="price">￥25.00</div>
+                            <div class="other clearfix">
+                                <span class="price">￥25.00</span>
+                                <span class="num">已批253件</span>
+                            </div>
                         </a>
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
                         <a href="#">
                             <img class="mui-media-object" src="/src/assets/images/yuantiao.jpg">
                             <div class="mui-media-body">静静看这世界</div>
-                            <div class="price">￥25.00</div>
+                            <div class="other clearfix">
+                                <span class="price">￥25.00</span>
+                                <span class="num">已批253件</span>
+                            </div>
                         </a>
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
                         <a href="#">
                             <img class="mui-media-object" src="/src/assets/images/yuantiao.jpg">
                             <div class="mui-media-body">静静看这世界</div>
-                            <div class="price">￥25.00</div>
+                            <div class="other clearfix">
+                                <span class="price">￥25.00</span>
+                                <span class="num">已批253件</span>
+                            </div>
                         </a>
                     </li>
                 </ul>
@@ -228,7 +235,7 @@
 </template>
 
 <script>
-import headBar from "../public/m/header-Top";
+import headBar from "../public/m/header-top2";
 import footerBar from "../public/m/footer";
 export default {
     name: 'app',
@@ -249,6 +256,8 @@ export default {
 .mui-table-view-cell:after {
     height: 0;
 }
+
+
 
 
 
@@ -275,21 +284,27 @@ export default {
 
 
 
+
+
 /* 导航2 */
-.te-navlist2 {
+
+.te-navlist {
     &.mui-table-view {
+        padding: 0 10px;
         .mui-table-view-cell {
+            width: 20%;
             line-height: 1;
             a {
-                padding: 15px 0;
+                padding: 10px 0;
                 span {
                     display: block;
                 }
                 .icon {
                     line-height: 0;
                     img {
-                        width: 38px;
-                        height: 38px;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
                     }
                 }
                 .label {
@@ -306,7 +321,10 @@ export default {
 
 
 
+
+
 /* 焦点图 */
+
 .te-slider {
     .mui-slider-indicator {
         left: 10px;
@@ -416,21 +434,35 @@ export default {
     }
     .procuctbox {
         .mui-table-view-cell {
-            .mui-media-body {
-                font-size: 12px;
-                color: #323232;
-                line-height: 17px;
-                text-align: left;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                margin: 2px 0;
-            }
-            .price {
-                font-size: 14px;
-                color: #e51c23;
-                line-height: 20px;
-                text-align: left;
+            &>a:not(.mui-btn) {
+                white-space: normal;
+
+                .mui-media-body {
+                    margin: 2px 0;
+                    height: 28px;
+                    line-height: 14px;
+                    font-size: 12px;
+                    color: #323232;
+                    text-align: left;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                }
+                .other {
+                    margin-top: 5px;
+                    .price {
+                        float: left;
+                        font-size: 14px;
+                        color: #e51c23;
+                        line-height: 20px;
+                        text-align: left;
+                    }
+                    .num {
+                        float: right;
+                        font-size: 14px;
+                    }
+                }
             }
         }
     }

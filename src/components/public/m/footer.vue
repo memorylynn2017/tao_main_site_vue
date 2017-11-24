@@ -5,15 +5,15 @@
             <span class="mui-icon iconfont icon-home"></span>
             <span class="mui-tab-label">首页</span>
         </a>
-        <a class="mui-tab-item" href="#">
+        <a class="mui-tab-item" href="/search">
             <span class="mui-icon iconfont icon-shouye5fenlei1"></span>
             <span class="mui-tab-label">搜索</span>
         </a>
-        <a class="mui-tab-item" href="#">
+        <a class="mui-tab-item" href="/find">
             <span class="mui-icon iconfont icon-yan"></span>
             <span class="mui-tab-label">发现</span>
         </a>
-        <a class="mui-tab-item" href="#">
+        <a class="mui-tab-item" href="/cart">
             <span class="mui-icon iconfont icon-gouwuche"></span>
             <span class="mui-tab-label">进货车</span>
         </a>

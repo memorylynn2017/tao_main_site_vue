@@ -1,3 +1,10 @@
+//字体尺寸
+.fs-loop(@i, @n) when (@i <= @n) {
+	.fs-@{i} {
+			font-size: unit(@i,px)!important;
+	}
+	.fs-loop((@i + 1), @n);
+}
 //margin,padding设值
 .pos-loop(@i, @n) when (@i <= @n) {
 	.mt@{i} {margin-top: unit(@i,px);}
@@ -30,4 +37,5 @@ ul{
     }
 }
 
+.fs-loop(10,24);
 .pos-loop(5,50);
