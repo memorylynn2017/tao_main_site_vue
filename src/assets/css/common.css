@@ -304,3 +304,13 @@ ul li {
 .pr50 {
   padding-right: 50px;
 }
+.mui-table-view.top-noline::before {
+  height: 0;
+}
+.mui-table-view.bottom-noline::after {
+  height: 0;
+}
+.mui-table-view.noline::before,
+.mui-table-view.noline::after {
+  height: 0;
+}
