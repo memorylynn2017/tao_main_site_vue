@@ -12,6 +12,24 @@ import M_daynews from "../components/m_page/m_daynews";
 // ...
 // （4）、6块6特批
 // ...
+
+//M_index_Product
+// try a try
+import M_productypes from "../components/m_page/m_productypes";
+// （1）、girlProduct
+// （2）、boyProduct
+// ...
+// （3）、childProduct
+// ...
+// （4）、brasProduct
+// ...
+// （5）、shoesProduct
+// ...
+// （6）、bagsProduct
+// ...
+
+
+
 import M_search from "../components/m_page/m_search";
 import M_find from "../components/m_page/m_find";
 import M_cart from "../components/m_page/m_cart";
@@ -59,14 +77,21 @@ export default new Router({
       path: "/index", //首页2
       component: M_index2
     },
+    // 主页_产品分类列表
     {
-      path: "/search", //搜索页面
-      component: M_search
+      path: "/M_productypes", //产品分类
+      component: M_productypes
     },
+    //主页_每日新款列表
     {
       path: "/M_daynews", //每日新款
       component: M_daynews
     },
+    {
+      path: "/search", //搜索页面
+      component: M_search
+    },
+
     {
       path: "/find", //发现
       component: M_find

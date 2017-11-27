@@ -7,22 +7,22 @@
             <!-- 分类导航 -->
             <ul class="mui-table-view mui-grid-view top-noline bottom-noline te-table-view">
                 <li class="mui-table-view-cell mui-media mui-col-xs-2">
-                    <a href="javascript:;">女装</a>
+                    <a href="/M_productypes">女装</a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-2">
-                    <a href="javascript:;">男装</a>
+                    <a href="/M_productypes">男装</a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-2">
-                    <a href="javascript:;">童装</a>
+                    <a href="/M_productypes">童装</a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-2">
-                    <a href="javascript:;">内衣</a>
+                    <a href="/M_productypes">内衣</a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-2">
-                    <a href="javascript:;">鞋帽</a>
+                    <a href="/M_productypes">鞋帽</a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-2">
-                    <a href="javascript:;">箱包</a>
+                    <a href="/M_productypes">箱包</a>
                 </li>
             </ul>
 
