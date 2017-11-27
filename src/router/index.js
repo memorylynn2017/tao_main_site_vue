@@ -1,30 +1,53 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Index from '../components/index/index'
-import Index2 from '../components/index/index2'
-import Search from '../components/m_page/m_search'
-import M_daynews from "../components/m_page/m_daynews"
-import M_find from "../components/m_page/m_find"
-import M_cart from "../components/m_page/m_cart"
-import M_myhome from "../components/m_page/m_myhome"
+import Vue from "vue";
+import Router from "vue-router";
+//首页
+import M_index from "../components/index/index";
+import M_index2 from "../components/index/index2";
+//M_index_content
+// （1）、每日新款
+import M_daynews from "../components/m_page/m_daynews";
+// （2）、优质商家
+// ...
+// （3）、TOP100
+// ...
+// （4）、6块6特批
+// ...
+import M_search from "../components/m_page/m_search";
+import M_find from "../components/m_page/m_find";
+import M_cart from "../components/m_page/m_cart";
+import M_myhome from "../components/m_page/m_myhome";
+//M_myhome_content
+// （1）、 我的钱包
+import M_mypurse from "../components/m_page/m_mypurse";
+// （2）、
+// ...
+// （3）、
+// ...
+// （4）、
+// ...
 
-Vue.use(Router)
+
+
+
+
+
+Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
+  mode: "history",
   routes: [
     {
-      path: '/',
-      name: 'Index',  //首页
-      component: Index
+      path: "/", //首页1
+      component: M_index
+    },
+
+    {
+      path: "/index", //首页2
+      component: M_index2
     },
     {
-      path: '/index', //首页2
-      component: Index2
-    },
-    {
-      path: '/search', //搜索页面
-      component: Search
+      path: "/search", //搜索页面
+      component: M_search
     },
     {
       path: "/M_daynews", //每日新款
@@ -39,8 +62,12 @@ export default new Router({
       component: M_cart
     },
     {
-      path: "/myhome",  //我的
+      path: "/myhome", //我的
       component: M_myhome
+    },
+    {
+      path: "/mypurse", //我的钱包
+      component: M_mypurse
     }
   ]
-})
+});
