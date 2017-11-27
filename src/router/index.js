@@ -19,13 +19,27 @@ import M_myhome from "../components/m_page/m_myhome";
 //M_myhome_content
 // （1）、 我的钱包
 import M_mypurse from "../components/m_page/m_mypurse";
-// （2）、
+// （2）、 收藏商品
 // ...
-// （3）、
+// （3）、 店铺关注
 // ...
-// （4）、
+// （4）、 关注上新
+// ...
+// （5）、 我的足迹
+// ...
+// （6）、 快速补货
+// ...
+// （7）、 下架提醒
 // ...
 
+//M_myhome_order
+// （1）、 待付款
+// ...
+// （2）、 待收货
+// ...
+// （3）、 已完成
+// ...
+// （4）、 已取消
 
 
 
