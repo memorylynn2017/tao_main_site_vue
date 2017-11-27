@@ -1,7 +1,7 @@
 <template>
     <div class="app">
         <!-- 头部 -->
-        <headBar></headBar>
+        <headBar :headTitle="headTitle"></headBar>
 
         <div class="mui-content find mb50">
             <div class="main">
@@ -48,7 +48,7 @@ export default {
     name: 'app',
     data() {
         return {
-            msg: 'Welcome to m.taoee.com'
+            headTitle: '发现'
         }
     },
     components: {

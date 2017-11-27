@@ -1,7 +1,7 @@
 <template>
     <div class="app">
         <!-- 头部 -->
-        <headBar></headBar>
+        <headBar :headTitle="headTitle"></headBar>
 
         <div class="mui-content cart mb50">
             <!-- 空 -->
@@ -70,14 +70,13 @@
                                     <p class="title mui-ellipsis">1591#蕾丝连衣裙蕾丝1591#蕾丝连衣裙蕾丝1591#蕾丝连衣裙蕾丝</p>
                                     <span class="num">4件</span>
                                     <div class="desc">
-                                        粉色:M/1件;L/1件;<br/>
-                                        粉色:M/1件;L/1件;
+                                        粉色:M/1件;L/1件;<br/> 粉色:M/1件;L/1件;
                                     </div>
                                     <a class="btn" href="javascript:;">修改</a>
                                 </div>
                             </div>
                         </div>
-                        
+
                     </form>
                 </div>
             </div>
@@ -90,7 +89,7 @@
         <nav id="footer_settlement" class="mui-bar mui-bar-tab te-settlement">
             <div class="mui-input-row mui-checkbox mui-left mui-pull-left settlement-all">
                 <input name="checkbox" value="1" type="checkbox">
-                <span>全选    合计: ￥552.00</span>
+                <span>全选 合计: ￥552.00</span>
             </div>
             <a class="settlement-btn mui-pull-right" href="javascript:;">
                 <span>去结算(13)</span>
@@ -106,7 +105,7 @@ export default {
     name: 'app',
     data() {
         return {
-            msg: 'Welcome to m.taoee.com'
+            headTitle: '进货车'
         }
     },
     components: {
@@ -116,6 +115,20 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+.mui-checkbox {
+    input[type=checkbox] {
+        left: 10px;
+        width: 20px;
+        height: 20px;
+        &:checked:before {
+            color: #dd171e;
+        }
+        &:before {
+            font-size: 20px;
+        }
+    }
+}
+
 .cart {
     // 空
     .cart-empty {
@@ -167,14 +180,7 @@ export default {
                     height: 0;
                 }
                 input[type=checkbox] {
-                    left: 10px;
-                    line-height: 105px;
-                    &:checked:before {
-                        color: #dd171e;
-                    }
-                    &:before {
-                        font-size: 20px;
-                    }
+                    top: 50px;
                 } //图片内容块
                 .cart-item-con {
                     padding-left: 40px;
@@ -237,28 +243,21 @@ export default {
         }
     }
 }
+
 // 结算
-.te-settlement{
+.te-settlement {
     background: #fff;
-    .settlement-all{
+    .settlement-all {
         height: 50px;
         input[type=checkbox] {
-            top: 0;
-            left: 10px;
-            line-height: 50px;
-            &:checked:before {
-                color: #dd171e;
-            }
-            &:before {
-                font-size: 20px;
-            }
+            top: 15px;
         }
-        span{
+        span {
             padding-left: 40px;
             line-height: 50px;
         }
     }
-    .settlement-btn{
+    .settlement-btn {
         display: inline-block;
         width: 114px;
         height: 50px;

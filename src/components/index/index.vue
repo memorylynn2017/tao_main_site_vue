@@ -92,6 +92,36 @@
                     </a>
                 </li>
             </ul>
+            <div class="te-slider-indicator">
+                <a class="te-control-item" href="javascript:;">
+                    <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1197/11971719/raw_1503045357.jpeg" alt=""></span>
+                    <span class="label">每日新款</span>
+                </a>
+                <a class="te-control-item" href="javascript:;">
+                    <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1252/12524601/raw_1504850996.jpeg" alt=""></span>
+                    <span class="label">优质商家</span>
+                </a>
+                <a class="te-control-item" href="javascript:;">
+                    <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1193/11938059/raw_1502955822.jpeg" alt=""></span>
+                    <span class="label">TOP100</span>
+                </a>
+                <a class="te-control-item" href="javascript:;">
+                    <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1197/11971719/raw_1503045357.jpeg" alt=""></span>
+                    <span class="label">6块6特批</span>
+                </a>
+                <a class="te-control-item" href="javascript:;">
+                    <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1254/12544227/raw_1504927542.png" alt=""></span>
+                    <span class="label">当季精选</span>
+                </a>
+                <a class="te-control-item" href="javascript:;">
+                    <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1254/12543942/raw_1504926913.png" alt=""></span>
+                    <span class="label">外贸热销</span>
+                </a>
+                <a class="te-control-item" href="javascript:;">
+                    <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1252/12526180/raw_1504852556.png" alt=""></span>
+                    <span class="label">大码女装</span>
+                </a>
+            </div>
 
             <!-- 每日更新 -->
             <div class="daynew mt10">
@@ -252,6 +282,10 @@ export default {
 
 
 
+
+
+
+
 /* 导航 */
 
 .te-table-view {
@@ -275,7 +309,12 @@ export default {
 
 
 
+
+
+
+
 /* 导航2 */
+
 .te-navlist2 {
     &.mui-table-view {
         .mui-table-view-cell {
@@ -302,11 +341,49 @@ export default {
     }
 }
 
+.te-slider-indicator {
+    padding: 10px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    background-color: #fff;
+
+    .te-control-item {
+        display: inline-block;
+        background-color: #fff;
+        padding: 15px 0px;
+        width: 85px;
+        text-align: center;
+        span {
+            display: block;
+        }
+        .icon {
+            line-height: 0;
+            img {
+                width: 38px;
+                height: 38px;
+            }
+        }
+        .label {
+            margin-top: 5px;
+            line-height: 1;
+            font-size: 12px;
+            color: #323232;
+        }
+    }
+}
+
+
+
+
 
 
 
 
 /* 焦点图 */
+
 .te-slider {
     .mui-slider-indicator {
         left: 10px;

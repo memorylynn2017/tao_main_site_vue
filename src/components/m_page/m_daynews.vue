@@ -1,7 +1,7 @@
 <template>
     <div class="app">
-        <headBar></headBar>
-        <!-- <msgTitle msg-title="dad无可奉告"></msgTitle> -->
+        <!-- 头部 -->
+        <headBar :headTitle="headTitle"></headBar>
 
         <div class="mui-content dayupdateo">
             <ul class="selectbox mui-table-view mui-grid-view mui-grid-9">
@@ -117,10 +117,12 @@ import headBar from "../public/m/header-oth";
 export default {
     name: 'app',
     data() {
-        return {};
+        return {
+            headTitle: '每日最新'
+        };
     },
     components: {
-        headBar,
+        headBar
     }
 }
 </script>
