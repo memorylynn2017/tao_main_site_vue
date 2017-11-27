@@ -134,26 +134,26 @@
                 </ul>
                 <ul class="mui-table-view mui-grid-view containcolmn">
                     <li class="mui-table-view-cell mui-media mui-col-xs-4">
-                        <a href="#">
+                        <a href="/M_produclists">
                             <img class="mui-media-object" src="/src/assets/images/shuijiao.jpg">
                             <div class="mui-media-body">￥43.00</div>
                         </a>
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-4">
-                        <a href="#">
+                        <a href="/M_produclists">
                             <img class="mui-media-object" src="/src/assets/images/muwu.jpg">
                             <div class="mui-media-body">￥43.00</div>
                         </a>
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-4">
-                        <a href="#"><img class="mui-media-object" src="/src/assets/images/cbd.jpg">
+                        <a href="/M_produclists"><img class="mui-media-object" src="/src/assets/images/cbd.jpg">
                             <div class="mui-media-body">￥43.00</div>
                         </a>
                     </li>
                 </ul>
                 <ul class="mui-table-view rowpic">
                     <li class="mui-table-view-cell mui-media">
-                        <a href="javascript:;">
+                        <a href="/M_produclists">
                             <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
                             <div class="mui-media-body">
                                 <p class="title">2020#2017新款圆领修身蕾丝连衣裙女夏 高腰绣花短裙荷叶边裙子</p>
@@ -169,7 +169,7 @@
                         </a>
                     </li>
                     <li class="mui-table-view-cell mui-media">
-                        <a href="javascript:;">
+                        <a href="/M_produclists">
                             <img class="mui-media-object mui-pull-left" src="/src/assets/images/muwu.jpg">
                             <div class="mui-media-body">
                                 <p class="title">2020#2017新款圆领修身蕾丝连衣裙女夏 高腰绣花短裙荷叶边裙子</p>
@@ -185,7 +185,7 @@
                         </a>
                     </li>
                     <li class="mui-table-view-cell mui-media">
-                        <a href="javascript:;">
+                        <a href="/M_produclists">
                             <img class="mui-media-object mui-pull-left" src="/src/assets/images/cbd.jpg">
                             <div class="mui-media-body">
                                 <p class="title">2020#2017新款圆领修身蕾丝连衣裙女夏 高腰绣花短裙荷叶边裙子</p>
@@ -209,41 +209,41 @@
                     <i></i>7日爆款</h4>
                 <ul class="procuctbox mui-table-view mui-grid-view">
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
-                        <a href="#">
+                        <a href="/M_produclists">
                             <img class="mui-media-object" src="/src/assets/images/shuijiao.jpg">
                             <div class="mui-media-body">幸福就是可以一起睡觉</div>
                             <div class="price">￥25.00</div>
                         </a>
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
-                        <a href="#">
+                        <a href="/M_produclists">
                             <img class="mui-media-object" src="/src/assets/images/muwu.jpg">
                             <div class="mui-media-body">想要一间这样的木屋，静静的喝咖啡</div>
                             <div class="price">￥25.00</div>
                         </a>
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
-                        <a href="#"><img class="mui-media-object" src="/src/assets/images/cbd.jpg">
+                        <a href="/M_produclists"><img class="mui-media-object" src="/src/assets/images/cbd.jpg">
                             <div class="mui-media-body">Color of SIP CBD</div>
                             <div class="price">￥25.00</div>
                         </a>
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
-                        <a href="#">
+                        <a href="/M_produclists">
                             <img class="mui-media-object" src="/src/assets/images/yuantiao.jpg">
                             <div class="mui-media-body">静静看这世界</div>
                             <div class="price">￥25.00</div>
                         </a>
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
-                        <a href="#">
+                        <a href="/M_produclists">
                             <img class="mui-media-object" src="/src/assets/images/yuantiao.jpg">
                             <div class="mui-media-body">静静看这世界</div>
                             <div class="price">￥25.00</div>
                         </a>
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
-                        <a href="#">
+                        <a href="/M_produclists">
                             <img class="mui-media-object" src="/src/assets/images/yuantiao.jpg">
                             <div class="mui-media-body">静静看这世界</div>
                             <div class="price">￥25.00</div>

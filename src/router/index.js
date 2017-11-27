@@ -7,15 +7,18 @@ import M_index2 from "../components/index/index2";
 // （1）、每日新款
 import M_daynews from "../components/m_page/m_daynews";
 // （2）、优质商家
-import M_seller from "../components/m_page/m_seller"
+import M_seller from "../components/m_page/m_seller";
 // （3）、TOP100
-import M_top100 from "../components/m_page/m_top100"
+import M_top100 from "../components/m_page/m_top100";
 // （4）、6块6特批
 // ...
+
+
 
 //M_index_Product
 // try a try
 import M_productypes from "../components/m_page/m_productypes";
+import M_produclists from "../components/m_page/m_produclists";
 // （1）、girlProduct
 // （2）、boyProduct
 // ...
@@ -27,6 +30,7 @@ import M_productypes from "../components/m_page/m_productypes";
 // ...
 // （6）、bagsProduct
 // ...
+
 
 
 
@@ -78,19 +82,26 @@ export default new Router({
       path: "/index", //首页2
       component: M_index2
     },
-    // 主页_产品分类列表
+
     {
-      path: '/search', //搜索页面
+      path: "/search", //搜索页面
       component: search
     },
     {
-      path: '/searchpage', //搜索页面（尾部）
+      path: "/searchpage", //搜索页面（尾部）
       component: searchpage
     },
+    //主页_产品分类列表
     {
       path: "/M_productypes", //产品分类
       component: M_productypes
     },
+    //主页_产品详情列表
+    {
+      path: "/M_produclists", //产品分类
+      component: M_produclists
+    },
+
     //主页_每日新款列表
     {
       path: "/M_daynews", //每日新款
@@ -100,10 +111,12 @@ export default new Router({
       path: "/M_seller", //优质商家
       component: M_seller
     },
+
     {
       path: "/M_top100", //TOP100
       component: M_top100
     },
+
     {
       path: "/find", //发现
       component: M_find
