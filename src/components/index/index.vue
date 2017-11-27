@@ -66,7 +66,7 @@
             </div>
 
             <!-- 分类导航2 -->
-            <ul class="mui-table-view mui-grid-view top-noline bottom-noline te-table-view te-navlist2">
+            <!-- <ul class="mui-table-view mui-grid-view top-noline bottom-noline te-table-view te-navlist2">
                 <li class="mui-table-view-cell mui-media mui-col-xs-3">
                     <a href="/M_daynews">
                         <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1197/11971719/raw_1503045357.jpeg" alt=""></span>
@@ -91,17 +91,17 @@
                         <span class="label">6块6特批</span>
                     </a>
                 </li>
-            </ul>
+            </ul> -->
             <div class="te-slider-indicator">
-                <a class="te-control-item" href="javascript:;">
+                <a class="te-control-item" href="/M_daynews">
                     <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1197/11971719/raw_1503045357.jpeg" alt=""></span>
                     <span class="label">每日新款</span>
                 </a>
-                <a class="te-control-item" href="javascript:;">
+                <a class="te-control-item" href="/M_seller">
                     <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1252/12524601/raw_1504850996.jpeg" alt=""></span>
                     <span class="label">优质商家</span>
                 </a>
-                <a class="te-control-item" href="javascript:;">
+                <a class="te-control-item" href="/M_top100">
                     <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1193/11938059/raw_1502955822.jpeg" alt=""></span>
                     <span class="label">TOP100</span>
                 </a>
@@ -315,31 +315,31 @@ export default {
 
 /* 导航2 */
 
-.te-navlist2 {
-    &.mui-table-view {
-        .mui-table-view-cell {
-            line-height: 1;
-            a {
-                padding: 15px 0;
-                span {
-                    display: block;
-                }
-                .icon {
-                    line-height: 0;
-                    img {
-                        width: 38px;
-                        height: 38px;
-                    }
-                }
-                .label {
-                    margin-top: 5px;
-                    line-height: 1;
-                    font-size: 12px;
-                }
-            }
-        }
-    }
-}
+// .te-navlist2 {
+//     &.mui-table-view {
+//         .mui-table-view-cell {
+//             line-height: 1;
+//             a {
+//                 padding: 15px 0;
+//                 span {
+//                     display: block;
+//                 }
+//                 .icon {
+//                     line-height: 0;
+//                     img {
+//                         width: 38px;
+//                         height: 38px;
+//                     }
+//                 }
+//                 .label {
+//                     margin-top: 5px;
+//                     line-height: 1;
+//                     font-size: 12px;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 .te-slider-indicator {
     padding: 10px;

@@ -2,11 +2,14 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '../components/index/index'
 import Index2 from '../components/index/index2'
-import Search from '../components/m_page/m_search'
-import M_daynews from "../components/m_page/m_daynews"
+import search from '../components/m_page/m_search'  //搜索
+import searchpage from '../components/m_page/m_searchpage'  //搜索（尾部）
+import M_daynews from "../components/m_page/m_daynews"  //每日新款
+import M_seller from "../components/m_page/m_seller"  //优质商家
+import M_top100 from "../components/m_page/m_top100"  //TOP100
 import M_find from "../components/m_page/m_find"
 import M_cart from "../components/m_page/m_cart"
-import M_myhome from "../components/m_page/m_myhome"
+import M_myhome from "../components/m_page/m_myhome"  //我的首页
 
 Vue.use(Router)
 
@@ -24,11 +27,23 @@ export default new Router({
     },
     {
       path: '/search', //搜索页面
-      component: Search
+      component: search
+    },
+    {
+      path: '/searchpage', //搜索页面（尾部）
+      component: searchpage
     },
     {
       path: "/M_daynews", //每日新款
       component: M_daynews
+    },
+    {
+      path: "/M_seller", //优质商家
+      component: M_seller
+    },
+    {
+      path: "/M_top100", //TOP100
+      component: M_top100
     },
     {
       path: "/find", //发现
