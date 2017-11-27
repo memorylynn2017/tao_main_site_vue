@@ -32,9 +32,10 @@
                                     <p class="title mui-ellipsis">1591#蕾丝连衣裙蕾丝1591#蕾丝连衣裙蕾丝1591#蕾丝连衣裙蕾丝</p>
                                     <span class="num">4件</span>
                                     <div class="desc">
-                                        粉色:M/1件;L/1件;<br/> 粉色:M/1件;L/1件;
-                                        <br/> 粉色:M/1件;L/1件;
-                                        <br/> 粉色:M/1件;L/1件;
+                                             粉色:M/1件;L/1件;
+                                        <br/>粉色:M/1件;L/1件;
+                                        <br/>粉色:M/1件;L/1件;
+                                        <br/>粉色:M/1件;L/1件;
                                     </div>
                                     <a class="btn" href="javascript:;">修改</a>
                                 </div>
