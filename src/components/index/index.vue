@@ -92,7 +92,7 @@
                     </a>
                 </li>
             </ul>
-            <div class="te-slider-indicator">
+            <!-- <div class="te-slider-indicator">
                 <a class="te-control-item" href="javascript:;">
                     <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1197/11971719/raw_1503045357.jpeg" alt=""></span>
                     <span class="label">每日新款</span>
@@ -121,7 +121,7 @@
                     <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1252/12526180/raw_1504852556.png" alt=""></span>
                     <span class="label">大码女装</span>
                 </a>
-            </div>
+            </div> -->
 
             <!-- 每日更新 -->
             <div class="daynew mt10">
