@@ -7,7 +7,7 @@
             <!-- 分类导航 -->
             <ul class="mui-table-view mui-grid-view top-noline bottom-noline te-table-view">
                 <li class="mui-table-view-cell mui-media mui-col-xs-2">
-                    <a href="/M_productypes">女装</a>
+                    <a href="/M_girlclose">女装</a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-2">
                     <a href="/M_productypes">男装</a>

@@ -68,7 +68,7 @@
 
                 <ul class="mui-table-view mui-table-view-chevron mt10">
                     <li class="mui-table-view-cell">
-                        <a href="#" class="mui-navigate-right">
+                        <a href="/mycollect" class="mui-navigate-right">
                             <span class="mui-icon mui-icon-star"></span>收藏商品</a>
                     </li>
                     <li class="mui-table-view-cell">

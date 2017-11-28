@@ -20,6 +20,7 @@ import M_top100 from "../components/m_page/m_top100";
 import M_productypes from "../components/m_page/m_productypes";
 import M_produclists from "../components/m_page/m_produclists";
 // （1）、girlProduct
+import M_girlclose from "../components/m_page/m_girlclose";
 // （2）、boyProduct
 // ...
 // （3）、childProduct
@@ -43,7 +44,7 @@ import M_myhome from "../components/m_page/m_myhome";
 // （1）、 我的钱包
 import M_mypurse from "../components/m_page/m_mypurse";
 // （2）、 收藏商品
-// ...
+import M_mycollect from "../components/m_page/m_mycollect";
 // （3）、 店铺关注
 // ...
 // （4）、 关注上新
@@ -111,10 +112,14 @@ export default new Router({
       path: "/M_seller", //优质商家
       component: M_seller
     },
-
     {
       path: "/M_top100", //TOP100
       component: M_top100
+    },
+    //分类导航
+    {
+      path: "/M_girlclose", //女装
+      component: M_girlclose
     },
 
     {
@@ -125,6 +130,7 @@ export default new Router({
       path: "/cart", //进货车
       component: M_cart
     },
+    //我的_模块里的功能
     {
       path: "/myhome", //我的
       component: M_myhome
@@ -132,6 +138,11 @@ export default new Router({
     {
       path: "/mypurse", //我的钱包
       component: M_mypurse
+    },
+    {
+      path: "/mycollect", //我的收藏
+      component: M_mycollect
     }
+    
   ]
 });

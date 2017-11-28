@@ -28,7 +28,7 @@
         </nav>
 
         <div class="mui-content seller mb50">
-            <ul class="mui-table-view seller-rows">
+            <ul class="mui-table-view procuct-list">
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
                         <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
@@ -200,50 +200,50 @@ export default {
   padding-top: 88px;
 }
 .seller {
-  &.mui-content {
-    > .mui-table-view:first-child {
-      margin-top: 0;
+    &.mui-content {
+        > .mui-table-view:first-child {
+        margin-top: 0;
+        }
     }
-  }
 
-  .seller-rows {
-    background-color: transparent;
-    .mui-table-view-cell {
-      margin-top: 10px;
-      padding: 0;
-      background: #fff;
-      > a:not(.mui-btn) {
-        margin: 0;
-        padding: 15px 0;
-      }
-      .mui-media-object {
-        margin: 0 30px;
-        width: 100px;
-        max-width: 100px;
-        height: 110px;
-      }
-      .mui-media-body {
-        .title {
-          position: relative;
-          margin-bottom: 5px;
-          height: 26px;
-          border-bottom: 1px solid #e6e6e6;
-          span {
-            font-size: 14px;
-            &.title-con {
-              color: #e51c23;
+    .procuct-list {
+        background-color: transparent;
+        .mui-table-view-cell {
+            margin-top: 10px;
+            padding: 0;
+            background: #fff;
+            > a:not(.mui-btn) {
+                margin: 0;
+                padding: 15px 0;
             }
-            &.mui-icon {
-              margin: 0 10px 11px 10px;
+            .mui-media-object {
+                margin: 0 30px;
+                width: 100px;
+                max-width: 100px;
+                height: 110px;
             }
-          }
+            .mui-media-body {
+                .title {
+                    position: relative;
+                    margin-bottom: 5px;
+                    height: 26px;
+                    border-bottom: 1px solid #e6e6e6;
+                    span {
+                        font-size: 14px;
+                        &.title-con {
+                            color: #e51c23;
+                        }
+                        &.mui-icon {
+                            margin: 0 10px 11px 10px;
+                        }
+                    }
+                }
+                p {
+                    line-height: 1.8;
+                    color: #323232;
+                }
+            }
         }
-        p {
-          line-height: 1.8;
-          color: #323232;
-        }
-      }
     }
-  }
 }
 </style>
