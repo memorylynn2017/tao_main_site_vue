@@ -42,16 +42,19 @@
                         <a href="#" class="mui-navigate-right">
                            </span>我要提现</a>
                     </li>
-                   
+                    <li class="mui-table-view-cell">
+                        <a href="#" class="mui-navigate-right">
+                          </span>提现记录</a>
+                    </li>
                 </ul>
 
-                <ul class="mui-table-view mui-table-view-chevron mt10">
+                <!-- <ul class="mui-table-view mui-table-view-chevron mt10">
                     <li class="mui-table-view-cell">
                         <a href="#" class="mui-navigate-right">
                           </span>提现记录</a>
                     </li>
                    
-                </ul>
+                </ul> -->
                 
 
             </div>
