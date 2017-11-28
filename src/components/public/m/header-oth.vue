@@ -9,10 +9,14 @@
 <style lang="less">
 .te-bar-nav {
   background: #fff;
-  h1{
+  h1 {
     color: #323232;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    pointer-events: auto;
   }
-  a{
+  a {
     color: #323232;
   }
 }
@@ -22,6 +26,6 @@ export default {
   data() {
     return {};
   },
-  props: ['headTitle']
-}
+  props: ["headTitle"]
+};
 </script>
