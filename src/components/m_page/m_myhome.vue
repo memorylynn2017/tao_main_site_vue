@@ -76,22 +76,22 @@
                             <span class="mui-icon iconfont icon-heart-outline"></span>店铺关注</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="#" class="mui-navigate-right">
+                        <a href="/myfollowupdate" class="mui-navigate-right">
                             <span class="mui-icon iconfont icon-yuanxuxian"></span>关注上新</a>
                     </li>
                 </ul>
 
                 <ul class="mui-table-view mui-table-view-chevron mt10">
                     <li class="mui-table-view-cell">
-                        <a href="#" class="mui-navigate-right">
+                        <a href="/mybrowse" class="mui-navigate-right">
                             <span class="mui-icon iconfont icon-zuji"></span>我的足迹</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="#" class="mui-navigate-right">
+                        <a href="/mysupply" class="mui-navigate-right">
                             <span class="mui-icon iconfont icon-lightning"></span>快速补货</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="#" class="mui-navigate-right">
+                        <a href="/myoffshelf" class="mui-navigate-right">
                             <span class="mui-icon iconfont icon-lingdang"></span>下架提醒</a>
                     </li>
                 </ul>

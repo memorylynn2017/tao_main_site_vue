@@ -5,27 +5,14 @@
 
         <!-- 导航 -->
         <nav class="nav-fun">
-            <ul class="selectbox mui-table-view mui-grid-view ">
-                <li class="mui-table-view-cell mui-media mui-col-xs-5 mui-col-sm-5">
-                    <select name="select_state" id="">
-                        <option value="0" selected="true">在售商品</option>
-                        <option value="1">下架商品</option>
-                    </select>
-                </li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-5 mui-col-sm-5 active">
-                    <a href="#addPopover">
-                        <span>分类</span>
-                    </a>
-                </li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-2">
-                    <a href="javascript:;">
-                        <span>编辑</span>
-                    </a>
-                    <a class="mui-hidden" href="javascript:;">
-                        <span>完成</span>
-                    </a>
-                </li>
-            </ul> 
+            <div class="mui-col-xs-10 mui-pull-left">
+                <div class="mui-input-row mui-search input-search-frame">
+                    <input type="search" class="mui-input-clear input-search" placeholder="搜索商品名称或编号">
+                </div>
+            </div>
+            <div class="mui-col-xs-2 mui-pull-left">
+                <a class="mui-btn btn-edit" href="javascript:;">编辑</a>
+            </div>
         </nav>
 
         <div class="mui-content collect mb50">
@@ -39,7 +26,7 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
+                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
@@ -50,7 +37,7 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
+                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
@@ -61,7 +48,7 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
+                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
@@ -72,7 +59,7 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
+                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
@@ -83,7 +70,7 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
+                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
@@ -94,7 +81,7 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
+                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
@@ -105,7 +92,7 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
+                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
@@ -116,43 +103,10 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
+                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
                 </li>
             </ul>
             
-            <div id="addPopover" class="mui-popover mui-content">
-                <div class="mui-scroll-wrapper">
-                    <ul class="mui-table-view mui-grid-view">
-                        <li class="mui-table-view-cell mui-media mui-col-xs-4">
-                            <span>连衣裙</span>
-                        </li>
-                        <li class="mui-table-view-cell mui-media mui-col-xs-4">
-                            <span>短裤</span>
-                        </li>
-                        <li class="mui-table-view-cell mui-media mui-col-xs-4">
-                            <span>蕾丝衫</span>
-                        </li>
-                        <li class="mui-table-view-cell mui-media mui-col-xs-4">
-                            <span>礼服</span>
-                        </li>
-                        <li class="mui-table-view-cell mui-media mui-col-xs-4">
-                            <span>两件套</span>
-                        </li>
-                        <li class="mui-table-view-cell mui-media mui-col-xs-4">
-                            <span>半身裙</span>
-                        </li>
-                        <li class="mui-table-view-cell mui-media mui-col-xs-4">
-                            <span>休闲裤</span>
-                        </li>
-                        <li class="mui-table-view-cell mui-media mui-col-xs-4">
-                            <span>连体裤</span>
-                        </li>
-                        <li class="mui-table-view-cell mui-media mui-col-xs-4">
-                            <span>连体裤</span>
-                        </li>
-                    </ul>   
-                </div>
-            </div>
         </div>
 
     </div>
@@ -164,7 +118,7 @@ export default {
     name: 'app',
     data() {
         return {
-            headTitle: '收藏商品'
+            headTitle: '下架提醒'
         }
     },
     components: {
@@ -173,70 +127,33 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-/* 弹框 */
-.mui-popover-arrow {display: none;}
-.mui-popover {
-    width: 100%;
-    border-radius: 0;
-    background: #fff;
-    box-shadow: none;
-    left: 0!important;
-    border-top: 1px solid #e6e6e6;
-    .mui-scroll-wrapper  {
-        margin: 0;
-        border-radius: 0;
-        position: relative;
-    }
-    .mui-table-view {
-        padding: 15px 15px 30px;
-        border-radius: 0;
-        background: #fff;
-        .mui-table-view-cell {
-            span {
-                display: inline-block;
-                width: 100%;
-                font-size: 14px;
-                color: #323232;
-                line-height: 20px;
-                padding: 6px 0;
-                border: 1px solid #bbbbbb;
-            } 
-        }
-    }
-}
 // 二级导航
 .nav-fun {
     position: fixed;
     top: 44px;
     width: 100%;
+    height: 40px;
+    background: #fff;
     z-index: 10;
-    .selectbox {
-        display: inline-block;
-        background: #fff;
-        height: 40px;
-        .mui-table-view-cell {
-            margin: 4px 0;
-            padding: 5px 0;
-            text-align: center;
-            border-right: 1px solid #e6e6e6;
-            span {
-                font-size: 0.85em;
-            }
-            &:last-child{
-                border: none;
-            }
-            > a:not(.mui-btn) {
-                margin: 0;
-                padding: 0;
-            }
-
-            select{
-                margin: 0;
-                padding: 0;
-                width: 70%;
-            }
+    border-top: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+    
+    .input-search-frame{
+        &.mui-active:before {
+            top: 25px;
+            left: 10px;
+            font-size: 16px;
         }
-        
+        .input-search{
+            margin: 2px 0;
+            font-size: 12px;
+            background: #fff;
+        }
+    }
+    .mui-btn.btn-edit{
+        padding-top: 9px;
+        padding-bottom: 9px;
+        border: none;
     }
 }
 

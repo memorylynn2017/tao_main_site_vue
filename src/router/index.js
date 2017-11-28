@@ -48,13 +48,13 @@ import M_mycollect from "../components/m_page/m_mycollect";
 // （3）、 店铺关注
 import M_myfollow from "../components/m_page/m_myfollow";
 // （4）、 关注上新
-// ...
+import M_myfollowupdate from "../components/m_page/m_myfollowupdate";
 // （5）、 我的足迹
-// ...
+import M_mybrowse from "../components/m_page/m_mybrowse";
 // （6）、 快速补货
-// ...
+import M_mysupply from "../components/m_page/m_mysupply";
 // （7）、 下架提醒
-// ...
+import M_myoffshelf from "../components/m_page/m_myoffshelf";
 
 //M_myhome_order
 // （1）、 待付款
@@ -146,7 +146,22 @@ export default new Router({
     {
       path: "/myfollow", //我的店铺关注
       component: M_myfollow
+    },
+    {
+      path: "/myfollowupdate", //关注上新
+      component: M_myfollowupdate
+    },
+    {
+      path: "/mybrowse", //浏览记录
+      component: M_mybrowse
+    },
+    {
+      path: "/mysupply", //快速补货
+      component: M_mysupply
+    },
+    {
+      path: "/myoffshelf", //下架提醒
+      component: M_myoffshelf
     }
-    
   ]
 });
