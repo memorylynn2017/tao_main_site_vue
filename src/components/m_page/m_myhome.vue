@@ -72,7 +72,7 @@
                             <span class="mui-icon mui-icon-star"></span>收藏商品</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="#" class="mui-navigate-right">
+                        <a href="/myfollow" class="mui-navigate-right">
                             <span class="mui-icon iconfont icon-heart-outline"></span>店铺关注</a>
                     </li>
                     <li class="mui-table-view-cell">

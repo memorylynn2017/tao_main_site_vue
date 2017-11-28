@@ -6,17 +6,14 @@
         <!-- 导航 -->
         <nav class="nav-fun">
             <ul class="selectbox mui-table-view mui-grid-view ">
-                <li class="mui-table-view-cell mui-media mui-col-xs-5 mui-col-sm-5">
+                <li class="mui-table-view-cell mui-media mui-col-xs-10 mui-col-sm-10">
                     <select name="select_state" id="">
-                        <option value="0" selected="true">在售商品</option>
-                        <option value="1">下架商品</option>
+                        <option value="0" selected="true">全部档口</option>
+                        <option value="1">近三日内上新</option>
+                        <option value="1">近七日内上新</option>
                     </select>
                 </li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-5 mui-col-sm-5 active">
-                    <a href="#addPopover">
-                        <span>分类</span>
-                    </a>
-                </li>
+
                 <li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-2">
                     <a href="javascript:;">
                         <span>编辑</span>
@@ -28,95 +25,91 @@
             </ul> 
         </nav>
 
-        <div class="mui-content collect mb50">
-            <ul class="procuct-list mui-table-view">
+        <div class="mui-content follow mb50">
+            <ul class="mui-table-view procuct-list">
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
                         <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
                         <div class="mui-media-body">
-                            <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
-                            <p class="num">800</p>
-                            <p class="price">￥25.00</p>
+                            <div class="title">
+                                <span class="title-con">红苹果二店</span>
+                                <span class="mui-icon mui-icon-arrowright mui-pull-right"></span>
+                            </div>
+                            <p>大西豪 1F B03D</p>
+                            <p>商品：58款</p>
+                            <p>销量：0件 人气：15</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
                         <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
                         <div class="mui-media-body">
-                            <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
-                            <p class="num">800</p>
-                            <p class="price">￥25.00</p>
+                            <div class="title">
+                                <span class="title-con">红苹果二店</span>
+                                <span class="mui-icon mui-icon-arrowright mui-pull-right"></span>
+                            </div>
+                            <p>大西豪 1F B03D</p>
+                            <p>商品：58款</p>
+                            <p>销量：0件 人气：15</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
                         <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
                         <div class="mui-media-body">
-                            <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
-                            <p class="num">800</p>
-                            <p class="price">￥25.00</p>
+                            <div class="title">
+                                <span class="title-con">红苹果二店</span>
+                                <span class="mui-icon mui-icon-arrowright mui-pull-right"></span>
+                            </div>
+                            <p>大西豪 1F B03D</p>
+                            <p>商品：58款</p>
+                            <p>销量：0件 人气：15</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
                         <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
                         <div class="mui-media-body">
-                            <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
-                            <p class="num">800</p>
-                            <p class="price">￥25.00</p>
+                            <div class="title">
+                                <span class="title-con">红苹果二店</span>
+                                <span class="mui-icon mui-icon-arrowright mui-pull-right"></span>
+                            </div>
+                            <p>大西豪 1F B03D</p>
+                            <p>商品：58款</p>
+                            <p>销量：0件 人气：15</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
                         <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
                         <div class="mui-media-body">
-                            <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
-                            <p class="num">800</p>
-                            <p class="price">￥25.00</p>
+                            <div class="title">
+                                <span class="title-con">红苹果二店</span>
+                                <span class="mui-icon mui-icon-arrowright mui-pull-right"></span>
+                            </div>
+                            <p>大西豪 1F B03D</p>
+                            <p>商品：58款</p>
+                            <p>销量：0件 人气：15</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
                         <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
                         <div class="mui-media-body">
-                            <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
-                            <p class="num">800</p>
-                            <p class="price">￥25.00</p>
+                            <div class="title">
+                                <span class="title-con">红苹果二店</span>
+                                <span class="mui-icon mui-icon-arrowright mui-pull-right"></span>
+                            </div>
+                            <p>大西豪 1F B03D</p>
+                            <p>商品：58款</p>
+                            <p>销量：0件 人气：15</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
-                </li>
-                <li class="mui-table-view-cell mui-media">
-                    <a href="javascript:;">
-                        <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
-                        <div class="mui-media-body">
-                            <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
-                            <p class="num">800</p>
-                            <p class="price">￥25.00</p>
-                        </div>
-                    </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
-                </li>
-                <li class="mui-table-view-cell mui-media">
-                    <a href="javascript:;">
-                        <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
-                        <div class="mui-media-body">
-                            <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
-                            <p class="num">800</p>
-                            <p class="price">￥25.00</p>
-                        </div>
-                    </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
                 </li>
             </ul>
             
@@ -164,7 +157,7 @@ export default {
     name: 'app',
     data() {
         return {
-            headTitle: '收藏商品'
+            headTitle: '店铺关注'
         }
     },
     components: {
@@ -173,37 +166,6 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-/* 弹框 */
-.mui-popover-arrow {display: none;}
-.mui-popover {
-    width: 100%;
-    border-radius: 0;
-    background: #fff;
-    box-shadow: none;
-    left: 0!important;
-    border-top: 1px solid #e6e6e6;
-    .mui-scroll-wrapper  {
-        margin: 0;
-        border-radius: 0;
-        position: relative;
-    }
-    .mui-table-view {
-        padding: 15px 15px 30px;
-        border-radius: 0;
-        background: #fff;
-        .mui-table-view-cell {
-            span {
-                display: inline-block;
-                width: 100%;
-                font-size: 14px;
-                color: #323232;
-                line-height: 20px;
-                padding: 6px 0;
-                border: 1px solid #bbbbbb;
-            } 
-        }
-    }
-}
 // 二级导航
 .nav-fun {
     position: fixed;
@@ -218,7 +180,7 @@ export default {
             margin: 4px 0;
             padding: 5px 0;
             text-align: center;
-            border-right: 1px solid #e6e6e6;
+            // border-right: 1px solid #e6e6e6;
             span {
                 font-size: 0.85em;
             }
@@ -239,52 +201,50 @@ export default {
         
     }
 }
-
-.collect{
+.follow {
     &.mui-content {
         > .mui-table-view:first-child {
         margin-top: 0;
         }
     }
-
     padding-top: 84px;
-    .procuct-list{
+
+    .procuct-list {
         background-color: transparent;
-        .mui-table-view-cell{
+        .mui-table-view-cell {
             margin-top: 10px;
             padding: 0;
             background: #fff;
             > a:not(.mui-btn) {
-                margin: 15px 16px 15px 13px;
-                .mui-media-object {
-                    width: 90px;
-                    max-width: 90px;
-                    height: 110px;
-                }
-                .mui-media-body {
-                    .title{
-                        color: #000;
-                        white-space: normal;
-                        display: -webkit-box;
-                        -webkit-box-orient: vertical;
-                        -webkit-line-clamp: 2;
-                        overflow: hidden;
-                    }
-                    .num{
-                        margin-top: 10px;
-                        color: #323232;
-                    }
-                    .price{
-                        margin-top: 15px;
-                        color: #E51C23;
-                    }
-                }
+                margin: 0;
+                padding: 15px 0;
             }
-            .btn-addcart{
-                position: absolute;
-                top: auto;
-                bottom: 0;
-                font-size: 12px;
+            .mui-media-object {
+                margin: 0 30px;
+                width: 100px;
+                max-width: 100px;
+                height: 110px;
+            }
+            .mui-media-body {
+                .title {
+                    position: relative;
+                    margin-bottom: 5px;
+                    height: 26px;
+                    border-bottom: 1px solid #e6e6e6;
+                    span {
+                        font-size: 14px;
+                        &.title-con {
+                            color: #e51c23;
+                        }
+                        &.mui-icon {
+                            margin: 0 10px 11px 10px;
+                        }
+                    }
+                }
+                p {
+                    line-height: 1.8;
+                    color: #323232;
+                }
             }
         }
     }

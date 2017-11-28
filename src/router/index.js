@@ -46,7 +46,7 @@ import M_mypurse from "../components/m_page/m_mypurse";
 // （2）、 收藏商品
 import M_mycollect from "../components/m_page/m_mycollect";
 // （3）、 店铺关注
-// ...
+import M_myfollow from "../components/m_page/m_myfollow";
 // （4）、 关注上新
 // ...
 // （5）、 我的足迹
@@ -140,8 +140,12 @@ export default new Router({
       component: M_mypurse
     },
     {
-      path: "/mycollect", //我的收藏
+      path: "/mycollect", //我的收藏商品
       component: M_mycollect
+    },
+    {
+      path: "/myfollow", //我的店铺关注
+      component: M_myfollow
     }
     
   ]
