@@ -21,7 +21,7 @@
                 <ul class="mui-table-view mui-table-view-chevron te-order">
                     <li class="mui-table-view-cell te-order-title">
                         <a href="/myorder" class="mui-navigate-right">
-                            <span class="fs-14">我的订单</span>
+                            <span class="fs-14 mui-pull-left">我的订单</span>
                             <span class="fs-12 mui-pull-right">查看全部</span>
                         </a>
                     </li>

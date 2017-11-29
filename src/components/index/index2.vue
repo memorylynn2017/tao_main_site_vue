@@ -128,7 +128,7 @@
                 <ul class="mui-table-view rowpic">
                     <li class="mui-table-view-cell mui-media">
                         <a href="javascript:;">
-                            <img class="mui-media-object mui-pull-left" src="/src/assets/images/muwu.jpg">
+                            <img class="mui-media-object mui-pull-left" src="https://img.vvic.com/1507719252580_839530.jpg?x-oss-process=image/crop%2Cx_238%2Cy_0%2Cw_517%2Ch_775/resize%2Cw_170%2Ch_255">
                             <div class="mui-media-body">
                                 <p class="title">2020#2017新款圆领修身蕾丝连衣裙女夏 高腰绣花短裙荷叶边裙子</p>
                                 <p class='des mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
@@ -144,7 +144,7 @@
                     </li>
                     <li class="mui-table-view-cell mui-media">
                         <a href="javascript:;">
-                            <img class="mui-media-object mui-pull-left" src="/src/assets/images/cbd.jpg">
+                            <img class="mui-media-object mui-pull-left" src="https://img.vvic.com/1505549924612_310743.jpg?x-oss-process=image/crop%2Cx_138%2Cy_0%2Cw_500%2Ch_750/resize%2Cw_170%2Ch_255">
                             <div class="mui-media-body">
                                 <p class="title">2020#2017新款圆领修身蕾丝连衣裙女夏 高腰绣花短裙荷叶边裙子</p>
                                 <p class='des mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
@@ -168,7 +168,7 @@
                 <ul class="procuctbox mui-table-view mui-grid-view">
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
                         <a href="#">
-                            <img class="mui-media-object" src="/src/assets/images/shuijiao.jpg">
+                            <img class="mui-media-object" src="https://img.vvic.com/1507608544376_814220.jpg?x-oss-process=image/crop%2Cx_155%2Cy_0%2Cw_534%2Ch_800/resize%2Cw_170%2Ch_255">
                             <div class="mui-media-body">幸福就是可以一起睡觉幸福就是可以一起睡觉幸福就是可以一起睡觉幸福就是可以一起睡觉</div>
                             <div class="other clearfix">
                                 <span class="price">￥25.00</span>
@@ -178,7 +178,7 @@
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
                         <a href="#">
-                            <img class="mui-media-object" src="/src/assets/images/muwu.jpg">
+                            <img class="mui-media-object" src="https://img.vvic.com/1509935030999_964606.jpg?x-oss-process=image/crop%2Cx_154%2Cy_20%2Cw_517%2Ch_775/resize%2Cw_170%2Ch_255">
                             <div class="mui-media-body">想要一间这样的木屋，静静的喝咖啡</div>
                             <div class="other clearfix">
                                 <span class="price">￥25.00</span>
@@ -187,7 +187,7 @@
                         </a>
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
-                        <a href="#"><img class="mui-media-object" src="/src/assets/images/cbd.jpg">
+                        <a href="#"><img class="mui-media-object" src="https://img.vvic.com/1500540907918_823978.jpg?x-oss-process=image/crop%2Cx_93%2Cy_0%2Cw_534%2Ch_800/resize%2Cw_170%2Ch_255">
                             <div class="mui-media-body">Color of SIP CBD</div>
                             <div class="other clearfix">
                                 <span class="price">￥25.00</span>
@@ -197,7 +197,7 @@
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
                         <a href="#">
-                            <img class="mui-media-object" src="/src/assets/images/yuantiao.jpg">
+                            <img class="mui-media-object" src="https://img.vvic.com/1507719252580_839530.jpg?x-oss-process=image/crop%2Cx_238%2Cy_0%2Cw_517%2Ch_775/resize%2Cw_170%2Ch_255">
                             <div class="mui-media-body">静静看这世界</div>
                             <div class="other clearfix">
                                 <span class="price">￥25.00</span>
@@ -207,7 +207,7 @@
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
                         <a href="#">
-                            <img class="mui-media-object" src="/src/assets/images/yuantiao.jpg">
+                            <img class="mui-media-object" src="https://img.vvic.com/1506237742742_355239.jpg?x-oss-process=image/crop%2Cx_122%2Cy_0%2Cw_534%2Ch_800/resize%2Cw_170%2Ch_255">
                             <div class="mui-media-body">静静看这世界</div>
                             <div class="other clearfix">
                                 <span class="price">￥25.00</span>
@@ -217,7 +217,7 @@
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
                         <a href="#">
-                            <img class="mui-media-object" src="/src/assets/images/yuantiao.jpg">
+                            <img class="mui-media-object" src="https://img.vvic.com/1503135131688_972338.jpg?x-oss-process=image/crop%2Cx_0%2Cy_24%2Cw_455%2Ch_682/resize%2Cw_170%2Ch_255">
                             <div class="mui-media-body">静静看这世界</div>
                             <div class="other clearfix">
                                 <span class="price">￥25.00</span>
