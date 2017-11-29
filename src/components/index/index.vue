@@ -10,19 +10,19 @@
                     <a href="/M_girlclose">女装</a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-2">
-                    <a href="/M_productypes">男装</a>
+                    <a href="#">男装</a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-2">
-                    <a href="/M_productypes">童装</a>
+                    <a href="#">童装</a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-2">
-                    <a href="/M_productypes">内衣</a>
+                    <a href="#">内衣</a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-2">
-                    <a href="/M_productypes">鞋帽</a>
+                    <a href="#">鞋帽</a>
                 </li>
                 <li class="mui-table-view-cell mui-media mui-col-xs-2">
-                    <a href="/M_productypes">箱包</a>
+                    <a href="#">箱包</a>
                 </li>
             </ul>
 
@@ -133,7 +133,7 @@
                     </li>
                 </ul>
                 <!-- 多出一个containcolmn -->
-                <ul class="mui-table-view mui-grid-view containcolmn rowpic">
+                <ul class="mui-table-view mui-grid-view containcolmn rowpic" style="padding: 0 0px 10px 0;">
                     <li class="mui-table-view-cell mui-media mui-col-xs-4">
                         <a href="/M_produclists">
                             <img class="mui-media-object " src="https://pro.modao.cc/uploads3/images/1140/11404475/raw_1501155257.jpeg">
@@ -143,13 +143,13 @@
                     <li class="mui-table-view-cell mui-media mui-col-xs-4">
                         <a href="/M_produclists">
                             <img class="mui-media-object" src="https://pro.modao.cc/uploads3/images/1140/11404460/raw_1501155239.jpeg">
-                            <div class="mui-media-body">￥43.00</div>
+                            <div class="mui-media-body">￥20.00</div>
                         </a>
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-4">
                         <a href="/M_produclists">
                             <img class="mui-media-object" src="https://pro.modao.cc/uploads3/images/1145/11455325/raw_1501411974.jpeg">
-                            <div class="mui-media-body">￥43.00</div>
+                            <div class="mui-media-body">￥25.00</div>
                         </a>
                     </li>
                 </ul>
@@ -159,7 +159,7 @@
                             <img class="mui-media-object mui-pull-left" src="https://pro.modao.cc/uploads3/images/1194/11949886/raw_1502972473.jpeg">
                             <div class="mui-media-body">
                                 <p class="title">2020#2017新款圆领修身蕾丝连衣裙女夏 高腰绣花短裙荷叶边裙子</p>
-                                <p class='des mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+                                <p class='des mui-ellipsis'>绮梦服饰</p>
                                 <p class="price">
                                     <span class="now">￥50.00</span>
                                     <span class="old">￥55.00</span>
@@ -174,11 +174,11 @@
                         <a href="/M_produclists">
                             <img class="mui-media-object mui-pull-left" src="https://pro.modao.cc/uploads3/images/1145/11455306/raw_1501411910.jpeg">
                             <div class="mui-media-body">
-                                <p class="title">2020#2017新款圆领修身蕾丝连衣裙女夏 高腰绣花短裙荷叶边裙子</p>
-                                <p class='des mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+                                <p class="title">实拍实价 鬼手鬼脸魔童短袖男女情侣款宽松T恤 561#</p>
+                                <p class='des mui-ellipsis'>摩登时代旗舰店</p>
                                 <p class="price">
-                                    <span class="now">￥50.00</span>
-                                    <span class="old">￥55.00</span>
+                                    <span class="now">￥35.00</span>
+                                    <span class="old">￥40.00</span>
                                 </p>
                                 <div class="btn">
                                     <button type="button" class="mui-btn">推荐商品</button>
@@ -190,11 +190,11 @@
                         <a href="/M_produclists">
                             <img class="mui-media-object mui-pull-left" src="https://pro.modao.cc/uploads3/images/1188/11882746/raw_1502795033.jpeg">
                             <div class="mui-media-body">
-                                <p class="title">2020#2017新款圆领修身蕾丝连衣裙女夏 高腰绣花短裙荷叶边裙子</p>
-                                <p class='des mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+                                <p class="title">实拍实价 鬼手鬼脸魔童短袖男女情侣款宽松T恤 562#</p>
+                                <p class='des mui-ellipsis'>绮梦服饰</p>
                                 <p class="price">
-                                    <span class="now">￥50.00</span>
-                                    <span class="old">￥55.00</span>
+                                    <span class="now">￥35.00</span>
+                                    <span class="old">￥40.00</span>
                                 </p>
                                 <div class="btn">
                                     <button type="button" class="mui-btn">推荐商品</button>
@@ -417,7 +417,7 @@ export default {
             }
         }
         &.rowpic {
-            background: #efeff4;
+            // background: #efeff4;
             .mui-table-view-cell {
                 background: #ffffff;
                 margin-top: 10px;
@@ -426,7 +426,8 @@ export default {
                 }
                 .mui-media-object {
                     line-height: 122px;
-                    max-width: 120px;
+                    width: 112px;
+                    max-width: 112px;
                     height: 130px;
                 }
                 .mui-media-body {
