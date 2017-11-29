@@ -20,7 +20,7 @@
                 <!-- 我的订单 -->
                 <ul class="mui-table-view mui-table-view-chevron te-order">
                     <li class="mui-table-view-cell te-order-title">
-                        <a href="#" class="mui-navigate-right">
+                        <a href="/myorder" class="mui-navigate-right">
                             <span class="fs-14">我的订单</span>
                             <span class="fs-12 mui-pull-right">查看全部</span>
                         </a>
@@ -29,25 +29,25 @@
 
                         <ul class="mui-table-view noline mui-grid-view">
                             <li class="mui-table-view-cell mui-media mui-col-xs-3">
-                                <a href="#">
+                                <a href="/myorder">
                                     <h3><span class="mui-icon iconfont icon-wallet_icon"></span></h3>
                                     <h6>待付款</h6>
                                 </a>
                             </li>
                             <li class="mui-table-view-cell mui-media mui-col-xs-3">
-                                <a href="#">
+                                <a href="/myorder">
                                     <h3><span class="mui-icon iconfont icon-huoche-copy"></span></h3>
                                     <h6>待收货</h6>
                                 </a>
                             </li>
                             <li class="mui-table-view-cell mui-media mui-col-xs-3">
-                                <a href="#">
+                                <a href="/myorder">
                                     <h3><span class="mui-icon iconfont icon-dui"></span></h3>
                                     <h6>已完成</h6>
                                 </a>
                             </li>
                             <li class="mui-table-view-cell mui-media mui-col-xs-3">
-                                <a href="#">
+                                <a href="/myorder">
                                     <h3><span class="mui-icon iconfont icon-lajixiang"></span></h3>
                                     <h6>已取消</h6>
                                 </a>
@@ -102,11 +102,11 @@
                             <span class="mui-icon iconfont icon-zaixiankefu"></span>在线客服</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="#" class="mui-navigate-right">
+                        <a href="/myreceiver" class="mui-navigate-right">
                             <span class="mui-icon iconfont icon-dizhi"></span>收货地址</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="#" class="mui-navigate-right">
+                        <a href="/myhelp" class="mui-navigate-right">
                             <span class="mui-icon mui-icon-help"></span>帮助中心</a>
                     </li>
                     <li class="mui-table-view-cell">

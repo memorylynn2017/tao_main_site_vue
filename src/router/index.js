@@ -56,7 +56,18 @@ import M_mysupply from "../components/m_page/m_mysupply";
 // （7）、 下架提醒
 import M_myoffshelf from "../components/m_page/m_myoffshelf";
 
+// （8）、 在线客服
+// ...
+// （9）、 收货地址
+import M_myreceiver from "../components/m_page/m_myreceiver";
+import M_myreceiver_add from "../components/m_page/m_myreceiver_add";
+import M_myreceiver_edit from "../components/m_page/m_myreceiver_edit";
+import M_myarea from "../components/m_page/m_myarea";
+// （10）、 帮助中心
+import M_myhelp from "../components/m_page/m_myhelp";
+
 //M_myhome_order
+import M_myorder from "../components/m_page/m_myorder";
 // （1）、 待付款
 // ...
 // （2）、 待收货
@@ -162,6 +173,32 @@ export default new Router({
     {
       path: "/myoffshelf", //下架提醒
       component: M_myoffshelf
+    },
+    {
+      path: "/myreceiver", //收货地址
+      component: M_myreceiver
+    },
+    {
+      path: "/myreceiveradd", //新增收货地址
+      component: M_myreceiver_add
+    },
+    {
+      path: "/myreceiveredit", //修改收货地址
+      component: M_myreceiver_edit
+    },
+    {
+      path: "/myarea", //修改地区
+      component: M_myarea
+    },
+    {
+      path: "/myhelp", //帮助中心
+      component: M_myhelp
+    },
+    //
+    {
+      path: "/myorder", //订单
+      component: M_myorder
     }
+    
   ]
 });
