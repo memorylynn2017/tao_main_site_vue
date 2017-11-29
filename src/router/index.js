@@ -39,35 +39,35 @@ import search from "../components/m_page/m_search";
 import searchpage from '../components/m_page/m_searchpage'  //搜索（尾部）
 import M_find from "../components/m_page/m_find";
 import M_cart from "../components/m_page/m_cart";
-import M_myhome from "../components/m_page/m_myhome";
+import M_myhome from "../components/m_page/my/m_myhome";
 //M_myhome_content
 // （1）、 我的钱包
-import M_mypurse from "../components/m_page/m_mypurse";
+import M_mypurse from "../components/m_page/my/m_mypurse";
 // （2）、 收藏商品
-import M_mycollect from "../components/m_page/m_mycollect";
+import M_mycollect from "../components/m_page/my/m_mycollect";
 // （3）、 店铺关注
-import M_myfollow from "../components/m_page/m_myfollow";
+import M_myfollow from "../components/m_page/my/m_myfollow";
 // （4）、 关注上新
-import M_myfollowupdate from "../components/m_page/m_myfollowupdate";
+import M_myfollowupdate from "../components/m_page/my/m_myfollowupdate";
 // （5）、 我的足迹
-import M_mybrowse from "../components/m_page/m_mybrowse";
+import M_mybrowse from "../components/m_page/my/m_mybrowse";
 // （6）、 快速补货
-import M_mysupply from "../components/m_page/m_mysupply";
+import M_mysupply from "../components/m_page/my/m_mysupply";
 // （7）、 下架提醒
-import M_myoffshelf from "../components/m_page/m_myoffshelf";
+import M_myoffshelf from "../components/m_page/my/m_myoffshelf";
 
 // （8）、 在线客服
 // ...
 // （9）、 收货地址
-import M_myreceiver from "../components/m_page/m_myreceiver";
-import M_myreceiver_add from "../components/m_page/m_myreceiver_add";
-import M_myreceiver_edit from "../components/m_page/m_myreceiver_edit";
-import M_myarea from "../components/m_page/m_myarea";
+import M_myreceiver from "../components/m_page/my/m_myreceiver";
+import M_myreceiver_add from "../components/m_page/my/m_myreceiver_add";
+import M_myreceiver_edit from "../components/m_page/my/m_myreceiver_edit";
+import M_myarea from "../components/m_page/my/m_myarea";
 // （10）、 帮助中心
-import M_myhelp from "../components/m_page/m_myhelp";
+import M_myhelp from "../components/m_page/my/m_myhelp";
 
 //M_myhome_order
-import M_myorder from "../components/m_page/m_myorder";
+import M_myorder from "../components/m_page/my/m_myorder";
 // （1）、 待付款
 // ...
 // （2）、 待收货

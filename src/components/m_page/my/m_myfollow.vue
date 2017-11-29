@@ -125,7 +125,7 @@
 </template>
 
 <script>
-import headBar from "../public/m/header-oth";
+import headBar from "../../public/m/header-oth";
 export default {
     name: 'app',
     data() {

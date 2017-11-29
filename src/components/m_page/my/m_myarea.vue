@@ -6,31 +6,29 @@
         <div class="mui-content receiver mb50">
             <form class="mui-input-group form">
                 <div class="form-block">
-                    <div class="mui-input-row">
-                        <label>收货人：</label>
-                        <input type="text" class="mui-input-clear" name="name" value="陈坤彬" />
-                    </div>
                     <div class="mui-input-row noline">
-                        <label>手机号码：</label>
-                        <input type="text" class="mui-input-clear" name="phone" value="13610012164" />
+                        <label>国家：</label>
+                        <input type="text" name="country" />
+                        <a class="mui-icon mui-icon-forward mui-pull-right area-btn" href="#"></a>
                     </div>
                 </div>
 
                 <div class="form-block">
                     <div class="mui-input-row">
-                        <label>所在地区：</label>
-                        <input type="text" name="area" value="广东省广州市海珠区" />
-                        <a class="mui-icon mui-icon-forward mui-pull-right area-btn" href="/myarea"></a>
+                        <label>城市：</label>
+                        <input type="text" name="city" />
+                        <a class="mui-icon mui-icon-forward mui-pull-right area-btn" href="#"></a>
                     </div>
-                    <div class="mui-input-row h-auto noline">
-                        <label>详细地址：</label>
-                        <textarea id="textarea" rows="5" placeholder="">南洲路119号华南至友5楼508（原粮油仓库）</textarea>
+                    <div class="mui-input-row noline">
+                        <label>区：</label>
+                        <input type="text" name="area" />
+                        <a class="mui-icon mui-icon-forward mui-pull-right area-btn" href="#"></a>
                     </div>
                 </div>
 
                 <div class="mui-button-row noline h-auto mt50">
                     <!-- <button type="button" class="mui-btn mui-btn-danger save-btn" onclick="return false;">保 存</button> -->
-                    <a class="mui-btn mui-btn-danger save-btn" href="/myreceiver">保 存</a>
+                    <a class="mui-btn mui-btn-danger save-btn mui-action-back" href="javascript:;">确 认</a>
                 </div>
             </form>
         </div>
@@ -39,12 +37,12 @@
 </template>
 
 <script>
-import headBar from "../public/m/header-oth";
+import headBar from "../../public/m/header-oth";
 export default {
     name: 'app',
     data() {
         return {
-            headTitle: '编辑收货地址'
+            headTitle: '地区选择'
         }
     },
     components: {

@@ -125,7 +125,7 @@
 </template>
 
 <script>
-import footerBar from "../public/m/footer";
+import footerBar from "../../public/m/footer";
 export default {
     name: 'app',
     data() {
