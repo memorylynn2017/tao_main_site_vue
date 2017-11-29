@@ -22,88 +22,88 @@
                         <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
                         <div class="mui-media-body">
                             <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
-                            <p class="num">800</p>
+                            <p class="num">8001</p>
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
+                    <a class="mui-btn btn-addcart" href="javascript:;">已下架</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
                         <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
                         <div class="mui-media-body">
                             <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
-                            <p class="num">800</p>
+                            <p class="num">8002</p>
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
+                    <a class="mui-btn btn-addcart" href="javascript:;">已下架</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
                         <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
                         <div class="mui-media-body">
                             <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
-                            <p class="num">800</p>
+                            <p class="num">8003</p>
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
+                    <a class="mui-btn btn-addcart" href="javascript:;">已下架</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
                         <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
                         <div class="mui-media-body">
                             <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
-                            <p class="num">800</p>
+                            <p class="num">8004</p>
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
+                    <a class="mui-btn btn-addcart" href="javascript:;">已下架</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
                         <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
                         <div class="mui-media-body">
                             <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
-                            <p class="num">800</p>
+                            <p class="num">8005</p>
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
+                    <a class="mui-btn btn-addcart" href="javascript:;">已下架</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
                         <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
                         <div class="mui-media-body">
                             <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
-                            <p class="num">800</p>
+                            <p class="num">8006</p>
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
+                    <a class="mui-btn btn-addcart" href="javascript:;">已下架</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
                         <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
                         <div class="mui-media-body">
                             <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
-                            <p class="num">800</p>
+                            <p class="num">8007</p>
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
+                    <a class="mui-btn btn-addcart" href="javascript:;">已下架</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
                         <img class="mui-media-object mui-pull-left" src="/src/assets/images/shuijiao.jpg">
                         <div class="mui-media-body">
                             <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
-                            <p class="num">800</p>
+                            <p class="num">8008</p>
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
+                    <a class="mui-btn btn-addcart" href="javascript:;">已下架</a>
                 </li>
             </ul>
             

@@ -60,9 +60,7 @@
                 <ul class="mui-table-view mui-table-view-chevron mt10">
                     <li class="mui-table-view-cell">
                         <a href="/mypurse" class="mui-navigate-right">
-                            <span class="mui-icon iconfont icon-qianbao"></span>
-                            <span>我的钱包</span>
-                        </a>
+                            <span class="mui-icon iconfont icon-qianbao"></span>我的钱包</a>
                     </li>
                 </ul>
 
