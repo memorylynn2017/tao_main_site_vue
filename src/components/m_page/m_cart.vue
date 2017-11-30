@@ -9,7 +9,7 @@
             <div class="cart-empty mui-block">
                 <img class="icon" src="https://pro.modao.cc/uploads2/images/724/7242796/raw_1484124596.png" alt="">
                 <p>您的购物车还是空的，赶紧行动吧！</p>
-                <a class="mui-btn mui-btn-danger btn" href="">马上进货</a>
+                <a class="mui-btn mui-btn-danger btn" href="/M_girlclose">马上进货</a>
             </div>
 
             <!-- 有 -->
