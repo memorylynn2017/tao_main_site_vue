@@ -133,7 +133,7 @@ export default new Router({
     },
     //主页_产品详情列表
     {
-      path: "/M_produclists", //产品分类
+      path: "/M_produclists", //产品详情
       component: M_produclists
     },
     //主页_商家分类列表
