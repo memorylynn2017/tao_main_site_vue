@@ -5,11 +5,24 @@
 
         <div class="mui-content orderdetail mb50">
             <ul class="mui-table-view te-table-view">
-                <li class="mui-table-view-cell">
-                    余额支付<span>(账户余额￥0.00)</span>
-                    <div class="mui-switch mui-switch-mini">
-                        <div class="mui-switch-handle"></div>
+                <li class="mui-table-view-cell order-header">
+                    <div class="mui-pull-left left">
+                        <p>订单号 9000003</p>
+                        <p>2017-08-21 11:30</p>
                     </div>
+                    <span class="mui-pull-right right">
+                        <span class="mui-btn iconfont icon-huoche2"></span>
+                        已发货
+                    </span>
+                </li>
+                <li class="mui-table-view-cell order-express">
+                    <a href="/ordertracking">
+                        <div class="mui-pull-left left">
+                            <p class="fs-14"><span class="mui-btn iconfont icon-huoche2"></span>申通快递 [448655467555]</p>
+                            <p class="fs-12">发货时间 2017-08-22 17:30 查询电话 95311</p>
+                        </div>
+                        <span class="mui-icon mui-icon-forward mui-pull-right right"></span>
+                    </a>
                 </li>
 
                 <li class="mui-table-view-cell mt10">
@@ -179,13 +192,13 @@
                     </ul>
                 </li>
 
-                <li class="mui-table-view-cell mt10 address">
+                <li class="mui-table-view-cell mt10 order-address">
                     <span class="mui-icon iconfont icon-dizhi mui-pull-left"></span>
                     <p>收货人: 陈坤彬     13610012164</p>
                     <p>广东省广州市海珠区 南洲路119号华南至友5楼508（原粮油仓库）</p>
                 </li>
 
-                <li class="mui-table-view-cell mt10 te-message">
+                <li class="mui-table-view-cell mt10 order-message">
                     <h5>留言备注</h5>
                     <textarea id="textarea" rows="3" placeholder="选填，输入你的留言（100字以内）..."></textarea>
                 </li>
@@ -214,6 +227,9 @@ export default {
     color: #E51C23;
 }
 .orderdetail{
+    &.mui-content>.mui-table-view:first-child {
+        margin-top: 0;
+    }
     .mui-table-view.te-table-view{
         background-color: transparent;
         >.mui-table-view-cell{
@@ -255,8 +271,46 @@ export default {
                 }
             }
         }
+        // 订单头部
+        .order-header{
+            height: 60px;
+            background: url(https://pro.modao.cc/uploads3/images/1206/12060163/raw_1503399865.jpeg) center center;
+            .left p{
+                color: #fff;
+            }
+            .right{
+                line-height: 36px;
+                color: #fff;
+                .mui-btn{
+                    padding: 7px 5px;
+                    color: inherit;
+                    background-color: transparent;
+                    font-size: 18px;
+                    border: 0;
+                }
+            }
+        }
+        // 快递
+        .order-express{
+            height: 78px;
+            .left p{
+                line-height: 24px;
+                color: #000;
+                .mui-btn{
+                    padding: 0 5px;
+                    color: #7d7d7d;
+                    background-color: transparent;
+                    font-size: 18px;
+                    border: 0;
+                }
+            }
+            .right{
+                line-height: 56px;
+                color: #000;
+            }
+        }
         // 地址
-        .address{
+        .order-address{
             .mui-icon{
                 margin-right: 10px;
                 height: 60px;
@@ -269,7 +323,7 @@ export default {
             }
         }
         // 留言
-        .te-message{
+        .order-message{
             h5{
                 color: #000;
             }
