@@ -11,14 +11,14 @@
                 </div>
             </div>
             <div class="mui-col-xs-2 mui-pull-left">
-                <a class="mui-btn btn-edit" href="javascript:;">编辑</a>
+                <a class="mui-btn btn-edit" href="/M_produclists">编辑</a>
             </div>
         </nav>
 
         <div class="mui-content collect mb50">
             <ul class="procuct-list mui-table-view">
                 <li class="mui-table-view-cell mui-media">
-                    <a href="javascript:;">
+                    <a href="/M_produclists">
                         <img class="mui-media-object mui-pull-left" src="https://pro.modao.cc/uploads3/images/1188/11882750/raw_1502795046.jpeg">
                         <div class="mui-media-body">
                             <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
@@ -26,10 +26,10 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
+                    <a class="mui-btn btn-addcart" href="/M_produclists">去下单</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
-                    <a href="javascript:;">
+                    <a href="/M_produclists">
                         <img class="mui-media-object mui-pull-left" src="https://pro.modao.cc/uploads3/images/1194/11949886/raw_1502972473.jpeg">
                         <div class="mui-media-body">
                             <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
@@ -37,10 +37,10 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
+                    <a class="mui-btn btn-addcart" href="/M_produclists">去下单</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
-                    <a href="javascript:;">
+                    <a href="/M_produclists">
                         <img class="mui-media-object mui-pull-left" src="https://pro.modao.cc/uploads3/images/1188/11882750/raw_1502795046.jpeg">
                         <div class="mui-media-body">
                             <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
@@ -48,10 +48,10 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
+                    <a class="mui-btn btn-addcart" href="/M_produclists">去下单</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
-                    <a href="javascript:;">
+                    <a href="/M_produclists">
                         <img class="mui-media-object mui-pull-left" src="https://pro.modao.cc/uploads3/images/1194/11949886/raw_1502972473.jpeg">
                         <div class="mui-media-body">
                             <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
@@ -59,10 +59,10 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
+                    <a class="mui-btn btn-addcart" href="/M_produclists">去下单</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
-                    <a href="javascript:;">
+                    <a href="/M_produclists">
                         <img class="mui-media-object mui-pull-left" src="https://pro.modao.cc/uploads3/images/1188/11882750/raw_1502795046.jpeg">
                         <div class="mui-media-body">
                             <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
@@ -70,10 +70,10 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
+                    <a class="mui-btn btn-addcart" href="/M_produclists">去下单</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
-                    <a href="javascript:;">
+                    <a href="/M_produclists">
                         <img class="mui-media-object mui-pull-left" src="https://pro.modao.cc/uploads3/images/1194/11949886/raw_1502972473.jpeg">
                         <div class="mui-media-body">
                             <p class="title">实拍 新款女衫 V领褶皱抽绳系带棉麻衬衫</p>
@@ -81,7 +81,7 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">去下单</a>
+                    <a class="mui-btn btn-addcart" href="/M_produclists">去下单</a>
                 </li>
             </ul>
             

@@ -15,10 +15,10 @@
                 </li>
 
                 <li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-2">
-                    <a href="javascript:;">
+                    <a href="/M_sellerlists">
                         <span>编辑</span>
                     </a>
-                    <a class="mui-hidden" href="javascript:;">
+                    <a class="mui-hidden" href="/M_sellerlists">
                         <span>完成</span>
                     </a>
                 </li>
@@ -28,7 +28,7 @@
         <div class="mui-content follow mb50">
             <ul class="mui-table-view procuct-list">
                 <li class="mui-table-view-cell mui-media">
-                    <a href="javascript:;">
+                    <a href="/M_sellerlists">
                         <img class="mui-media-object mui-pull-left" src="https://pro.modao.cc/uploads3/images/1140/11404465/raw_1501155243.jpeg">
                         <div class="mui-media-body">
                             <div class="title">
@@ -42,7 +42,7 @@
                     </a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
-                    <a href="javascript:;">
+                    <a href="/M_sellerlists">
                         <img class="mui-media-object mui-pull-left" src="https://pro.modao.cc/uploads3/images/1145/11455306/raw_1501411910.jpeg">
                         <div class="mui-media-body">
                             <div class="title">
@@ -57,7 +57,7 @@
                 </li>
                
                 <li class="mui-table-view-cell mui-media">
-                    <a href="javascript:;">
+                    <a href="/M_sellerlists">
                         <img class="mui-media-object mui-pull-left" src="https://pro.modao.cc/uploads3/images/1140/11404473/raw_1501155253.jpeg">
                         <div class="mui-media-body">
                             <div class="title">
@@ -71,7 +71,7 @@
                     </a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
-                    <a href="javascript:;">
+                    <a href="/M_sellerlists">
                         <img class="mui-media-object mui-pull-left" src="https://pro.modao.cc/uploads3/images/1140/11404460/raw_1501155239.jpeg">
                         <div class="mui-media-body">
                             <div class="title">
