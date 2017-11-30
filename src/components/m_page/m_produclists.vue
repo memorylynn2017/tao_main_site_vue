@@ -2,7 +2,7 @@
     <div class="app">
         <!-- 头部 -->
         <headBar :headTitle="headTitle"></headBar>
-        <div class="mui-content product-detail">
+        <div class="mui-content product-detail mb50">
             <!-- 图片轮播 -->
             <div id="slider" class="mui-slider banner" >
                 <div class="mui-slider-group mui-slider-loop">
@@ -145,6 +145,68 @@
         <a href="/carthave" class="mui-icon iconfont icon-gouwuche addcart">
             <span class="mui-badge mui-badge-danger">45</span>
         </a>
+
+        <div id="picture" class="mui-popover mui-popover-action mui-popover-bottom" style="display: block!important;">
+            <div class="checkbox">
+                <ul class="clearfix">
+                    <li>蓝色(3)</li>
+                    <li>白色</li>
+                    <li>粉色(1)</li>
+                    <li>黑色</li>
+                    <li>黄色</li>
+                </ul>
+            </div>
+            <div class="numbox">
+                <div class="type clearfix">
+                    <span class="label mui-pull-left">S</span>
+                    <div class="mui-numbox mui-pull-right" data-numbox-min='0'>
+                        <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+                        <input class="mui-input-numbox" type="number" />
+                        <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+                    </div>
+                </div>
+                <div class="type clearfix">
+                    <span class="label mui-pull-left">M</span>
+                    <div class="mui-numbox mui-pull-right" data-numbox-min='0'>
+                        <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+                        <input class="mui-input-numbox" type="number" />
+                        <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+                    </div>
+                </div>
+                <div class="type clearfix">
+                    <span class="label mui-pull-left">L</span>
+                    <div class="mui-numbox mui-pull-right" data-numbox-min='0'>
+                        <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+                        <input class="mui-input-numbox" type="number" />
+                        <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="checkresult">
+                <div class="mui-input-row">
+                    <label>已选</label>
+                    <textarea id="textarea" placeholder="">蓝色: S/1件，M/1件，L/1件 粉色: M/1件</textarea>
+                </div>
+            </div>
+            <div class="btnlist">
+                <a class="btn return" href="javascript:;">返回</a>
+                <a class="btn confirm" href="javascript:;">确定(3)</a>
+            </div>
+        </div>
+
+        <!--底部功能-->
+        <nav class="mui-bar mui-bar-tab te-bar-footer">
+            <a class="mui-tab-item w-20 weixin" href="javascript:;">
+                <span class="mui-icon mui-icon-weixin"></span>
+            </a>
+            <a class="mui-tab-item w-20 collect" href="javascript:;">
+                <span class="mui-icon mui-icon-star"></span>
+                <span class="mui-tab-label">收藏</span>
+            </a>
+            <a class="mui-tab-item w-60 add" href="#picture">
+                <span class="mui-tab-label">加入进货车</span>
+            </a>
+        </nav>
     </div>
 </template>
 
@@ -192,6 +254,14 @@ export default {
     .mui-badge{
         margin-left: -15px;
         padding: 1px;
+    }
+}
+.mui-tab-item{
+    &.w-20{
+        width: 20%;
+    }
+    &.w-60{
+        width: 60%;
     }
 }
 .product-detail {
@@ -389,4 +459,114 @@ export default {
         }
     }
 }
+// 底部功能
+.te-bar-footer{
+    .weixin{
+        color: #219020;
+        background-color: #fff;
+        .mui-icon{
+            top: 0;
+            font-size: 28px;
+        }
+    }
+    .collect{
+        color: #fff;
+        background-color: #ff8d00;
+    }
+    .add{
+        font-size: 14px;
+        color: #fff;
+        background-color: #e11920;
+    }
+}
+// 弹框start
+.mui-popover {
+    background: #fff!important;
+    .checkbox {
+        ul{
+            padding: 10px;
+            li {
+                float: left;
+                width: 70px;
+                font-size: 14px;
+                color: #888;
+                line-height: 26px;
+                text-align: center;
+                border: 1px solid #888;
+                list-style: none;
+                margin: 0 8px;
+                margin-bottom: 20px;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+    .numbox {
+        background: #f7f7f7;
+        padding: 12px 30px 2px;
+        margin-top: -20px;
+        .type {
+            margin-bottom: 10px;
+            .label {
+                font-size: 14px;
+                color: #323232;
+                line-height: 32px;
+            }
+            .mui-numbox {
+                .mui-btn {
+                    background: #fff;
+                }
+                .mui-input-numbox {
+                    background: #fffdcf;
+                }
+                .mui-btn-numbox-plus {
+                    color: #e51c23;
+                }
+            }
+        }
+    }
+    .checkresult {
+        padding: 20px 15px;
+        background: #fff;
+        .mui-input-row {
+            label {
+                padding: 11px 0;
+                width: 20%;
+                font-size: 14px;
+                color: #323232;
+            }
+        }
+        .mui-input-row label~textarea {
+            width: 80%;
+            margin-bottom: 0;
+            padding-left: 8px;
+            border: 1px solid #e51c23;
+            font-size: 14px;
+            color: #323232;
+            border-radius: 0;
+        }
+    }
+    .btnlist{
+        height: 40px;
+        .btn{
+            float: left;
+            display: inline-block;
+            width: 50%;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 14px;
+            &.return{
+                color: #000;
+                background-color: #f6f6f6;
+            }
+            &.confirm{
+                color: #fff;
+                background-color: #e51c23;
+            }
+        }
+    }
+}
+// 弹框end
 </style>
