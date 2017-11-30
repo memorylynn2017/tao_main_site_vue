@@ -11,11 +11,6 @@
                         <div class="mui-switch-handle"></div>
                     </div>
                 </li>
-                <li class="mui-table-view-cell mui-checkbox">
-                    <img class="icon-img mui-pull-left" src="https://pro.modao.cc/uploads3/images/1198/11983105/raw_1503118030.jpeg" alt="">
-                    微信支付
-                    <input name="checkbox" value="1" type="checkbox">
-                </li>
 
                 <li class="mui-table-view-cell mt10">
                     共3款商品 166件 ￥972.00
@@ -43,14 +38,156 @@
                 <li class="mui-table-view-cell mt10">
                     <!-- 左右分 -->
                     <ul class="mui-table-view mui-grid-view top-noline bottom-noline te-product">
-                        <li class="mui-table-view-cell mui-media mui-col-xs-3">
+                        <li class="mui-table-view-cell mui-media mui-col-xs-3 te-product-pic">
                             <img src="https://pro.modao.cc/uploads3/images/1190/11902879/raw_1502867980.jpeg" alt="">
-                            <span>1591</span>
+                            <span class="fs-14">1591</span>
                         </li>
-                        <li class="mui-table-view-cell mui-media mui-col-xs-9">
-                            <a href="#">男装</a>
+                        <li class="mui-table-view-cell mui-media mui-col-xs-9 te-product-con">
+                            <h5 class="head clearfix">
+                                <span class="mui-pull-left title">2517#蕾丝连衣裙蕾丝2517#蕾丝连衣裙蕾丝</span>
+                                <span class="mui-pull-right">VIP￥48.00</span>
+                            </h5>
+                            <ul class="ullist">
+                                <li>
+                                    <span class="mui-pull-left">粉色 M1</span>
+                                    <span class="txt-center">实发 1</span>
+                                    <span class="mui-pull-right">￥48.00</span>
+                                </li>
+                                <li>
+                                    <span class="mui-pull-left">粉色 M1</span>
+                                    <span class="txt-center">实发 1</span>
+                                    <span class="mui-pull-right">￥48.00</span>
+                                </li>
+                                <li>
+                                    <span class="mui-pull-left">粉色 M1</span>
+                                    <span class="txt-center">实发 1</span>
+                                    <span class="mui-pull-right">￥48.00</span>
+                                </li>
+                                <li>
+                                    <span class="mui-pull-left">粉色 M1</span>
+                                    <span class="txt-center">实发 1</span>
+                                    <span class="mui-pull-right">￥48.00</span>
+                                </li>
+                                <li>
+                                    <span class="mui-pull-left">粉色 M1</span>
+                                    <span class="txt-center">实发 1</span>
+                                    <span class="mui-pull-right">￥48.00</span>
+                                </li>
+                            </ul>
+                            <h5 class="txt-right c-red">
+                                实发3件 ￥146.00
+                            </h5>
                         </li>
                     </ul>
+                </li>
+
+                <li class="mui-table-view-cell mt10">
+                    <!-- 左右分 -->
+                    <ul class="mui-table-view mui-grid-view top-noline bottom-noline te-product">
+                        <li class="mui-table-view-cell mui-media mui-col-xs-3 te-product-pic">
+                            <img src="https://pro.modao.cc/uploads3/images/1145/11455325/raw_1501411974.jpeg" alt="">
+                            <span class="fs-14">1591</span>
+                        </li>
+                        <li class="mui-table-view-cell mui-media mui-col-xs-9 te-product-con">
+                            <h5 class="head clearfix">
+                                <span class="mui-pull-left title">2517#蕾丝连衣裙蕾丝2517#蕾丝连衣裙蕾丝</span>
+                                <span class="mui-pull-right">VIP￥48.00</span>
+                            </h5>
+                            <ul class="ullist">
+                                <li>
+                                    <span class="mui-pull-left">粉色 M1</span>
+                                    <span class="txt-center">实发 1</span>
+                                    <span class="mui-pull-right">￥48.00</span>
+                                </li>
+                            </ul>
+                            <h5 class="txt-right c-red">
+                                实发3件 ￥146.00
+                            </h5>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="mui-table-view-cell mt10">
+                    <!-- 左右分 -->
+                    <ul class="mui-table-view mui-grid-view top-noline bottom-noline te-product">
+                        <li class="mui-table-view-cell mui-media mui-col-xs-3 te-product-pic">
+                            <img src="https://pro.modao.cc/uploads3/images/1145/11455302/raw_1501411901.jpeg" alt="">
+                            <span class="fs-14">1591</span>
+                        </li>
+                        <li class="mui-table-view-cell mui-media mui-col-xs-9 te-product-con">
+                            <h5 class="head clearfix">
+                                <span class="mui-pull-left title">2517#蕾丝连衣裙蕾丝2517#蕾丝连衣裙蕾丝</span>
+                                <span class="mui-pull-right">VIP￥48.00</span>
+                            </h5>
+                            <ul class="ullist">
+                                <li>
+                                    <span class="mui-pull-left">粉色 M1</span>
+                                    <span class="txt-center">实发 1</span>
+                                    <span class="mui-pull-right">￥48.00</span>
+                                </li>
+                                <li>
+                                    <span class="mui-pull-left">粉色 M1</span>
+                                    <span class="txt-center">实发 1</span>
+                                    <span class="mui-pull-right">￥48.00</span>
+                                </li>
+                                <li>
+                                    <span class="mui-pull-left">粉色 M1</span>
+                                    <span class="txt-center">实发 1</span>
+                                    <span class="mui-pull-right">￥48.00</span>
+                                </li>
+                                <li>
+                                    <span class="mui-pull-left">粉色 M1</span>
+                                    <span class="txt-center">实发 1</span>
+                                    <span class="mui-pull-right">￥48.00</span>
+                                </li>
+                                <li>
+                                    <span class="mui-pull-left">粉色 M1</span>
+                                    <span class="txt-center">实发 1</span>
+                                    <span class="mui-pull-right">￥48.00</span>
+                                </li>
+                                <li>
+                                    <span class="mui-pull-left">粉色 M1</span>
+                                    <span class="txt-center">实发 1</span>
+                                    <span class="mui-pull-right">￥48.00</span>
+                                </li>
+                                <li>
+                                    <span class="mui-pull-left">粉色 M1</span>
+                                    <span class="txt-center">实发 1</span>
+                                    <span class="mui-pull-right">￥48.00</span>
+                                </li>
+                                <li>
+                                    <span class="mui-pull-left">粉色 M1</span>
+                                    <span class="txt-center">实发 1</span>
+                                    <span class="mui-pull-right">￥48.00</span>
+                                </li>
+                                <li>
+                                    <span class="mui-pull-left">粉色 M1</span>
+                                    <span class="txt-center">实发 1</span>
+                                    <span class="mui-pull-right">￥48.00</span>
+                                </li>
+                                <li>
+                                    <span class="mui-pull-left">粉色 M1</span>
+                                    <span class="txt-center">实发 1</span>
+                                    <span class="mui-pull-right">￥48.00</span>
+                                </li>
+
+                            </ul>
+                            <h5 class="txt-right c-red">
+                                实发3件 ￥146.00
+                            </h5>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="mui-table-view-cell mt10 address">
+                    <span class="mui-icon iconfont icon-dizhi mui-pull-left"></span>
+                    <p>收货人: 陈坤彬     13610012164</p>
+                    <p>广东省广州市海珠区 南洲路119号华南至友5楼508（原粮油仓库）</p>
+                </li>
+
+                <li class="mui-table-view-cell mt10 te-message">
+                    <h5>留言备注</h5>
+                    <textarea id="textarea" rows="3" placeholder="选填，输入你的留言（100字以内）..."></textarea>
                 </li>
             </ul>
         </div>
@@ -77,14 +214,71 @@ export default {
     color: #E51C23;
 }
 .orderdetail{
-    .te-table-view{
+    .mui-table-view.te-table-view{
         background-color: transparent;
         >.mui-table-view-cell{
             font-size: 14px;
             background-color: #fff;
         }
-        .te-product{
-            
+        
+        .mui-table-view.te-product{
+            padding: 0;
+            >.mui-table-view-cell{
+                vertical-align: top;
+                margin: 0;
+                padding: 0;
+            }
+            .te-product-pic{
+                img{
+                    width: 100%;
+                }
+            }
+            .te-product-con{
+                padding-left: 10px;
+                .head{
+                    .title{
+                        width: 150px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        text-align: left;
+                    }
+                }
+                .ullist{
+                    li{
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 14px;
+                        color: #646464;
+                        border-bottom: 1px solid #e2e2e2;
+                    }
+                }
+            }
+        }
+        // 地址
+        .address{
+            .mui-icon{
+                margin-right: 10px;
+                height: 60px;
+                line-height: 60px;
+                font-size: 20px;
+                color: #e1e1e1;
+            }
+            p{
+                color: #646464;
+            }
+        }
+        // 留言
+        .te-message{
+            h5{
+                color: #000;
+            }
+            textarea{
+                margin: 0;
+                font-size: 14px;
+                border: 0;
+                background-color: #f6f6f6;
+            }
         }
     }
 }

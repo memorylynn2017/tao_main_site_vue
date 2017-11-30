@@ -48,7 +48,8 @@ import M_girlclose from "../components/m_page/m_girlclose";
 import search from "../components/m_page/m_search";
 import searchpage from '../components/m_page/m_searchpage'  //搜索（尾部）
 import M_find from "../components/m_page/m_find";
-import M_cart from "../components/m_page/m_cart";
+import M_cart from "../components/m_page/m_cart"; //购物车-空
+import M_carthave from "../components/m_page/m_carthave"; //购物车-有
 import M_myhome from "../components/m_page/my/m_myhome";
 //M_myhome_content
 // （1）、 我的钱包
@@ -174,6 +175,10 @@ export default new Router({
     {
       path: "/cart", //进货车
       component: M_cart
+    },
+    {
+      path: "/carthave", //进货车
+      component: M_carthave
     },
     //我的_模块里的功能
     {
