@@ -142,7 +142,9 @@
                 </div>
             </div>
         </div>
-        
+        <a href="/carthave" class="mui-icon iconfont icon-gouwuche addcart">
+            <span class="mui-badge mui-badge-danger">45</span>
+        </a>
     </div>
 </template>
 
@@ -173,6 +175,25 @@ export default {
 }
 .fl {float: left;}
 .fr {float: right;}
+// 加入购物车
+.addcart{
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 50%;
+    z-index: 99;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    .mui-badge{
+        margin-left: -15px;
+        padding: 1px;
+    }
+}
 .product-detail {
     .mui-table-view:before,.mui-table-view:after {
         height: 0;
