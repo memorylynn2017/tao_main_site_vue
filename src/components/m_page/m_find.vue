@@ -7,7 +7,7 @@
             <div class="main">
                 <!-- 图片块 -->
                 <div class="pic-block">
-                    <img class="media-img" src="/src/assets/images/shuijiao.jpg">
+                    <img class="media-img" src="https://pro.modao.cc/uploads3/images/1145/11455306/raw_1501411910.jpeg">
                     <div class="media-body">
                         <p class="title mui-ellipsis">2020#2017新款圆领修身蕾丝连衣裙女夏 高腰绣花短裙荷叶边裙子</p>
                         <p class="price">

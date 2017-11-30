@@ -6,8 +6,18 @@ import M_index2 from "../components/index/index2";
 //M_index_content
 // （1）、每日新款
 import M_daynews from "../components/m_page/m_daynews";
+// （mock:/api/getproducts_list/:id）
+// a、每日新款_动态上新的产品详情
+// import M_produclists from "../components/m_page/m_produclists";
+// b、每日新款_动态上新的产品详情
+// c、每日新款_动态上新的产品详情
 // （2）、优质商家
 import M_seller from "../components/m_page/m_seller";
+// （mock:/api/getsellers_list/:id）
+// a、优质商家_动态上新的商家详情
+import M_sellerlists from "../components/m_page/m_sellerlists";
+// b、优质商家_动态上新的商家详情
+// c、优质商家_动态上新的商家详情
 // （3）、TOP100
 import M_top100 from "../components/m_page/m_top100";
 // （4）、6块6特批
@@ -126,6 +136,16 @@ export default new Router({
       path: "/M_produclists", //产品分类
       component: M_produclists
     },
+    //主页_商家分类列表
+    // {
+    //   path: "/M_sellertypes", //商家分类
+    //   component: M_sellertypes
+    // },
+    //主页_商家详情列表
+    {
+      path: "/M_sellerlists", //商家详情
+      component: M_sellerlists
+    },
 
     //主页_每日新款列表
     {
@@ -136,6 +156,7 @@ export default new Router({
       path: "/M_seller", //优质商家
       component: M_seller
     },
+
     {
       path: "/M_top100", //TOP100
       component: M_top100
@@ -212,7 +233,6 @@ export default new Router({
       path: "/myorder", //订单
       component: M_myorder
     },
-    
     //确认订单
     {path: "/pay", component: M_pay}, //收银台
     {path: "/orderconfirm", component: M_orderconfirm}, //确认订单
@@ -220,5 +240,6 @@ export default new Router({
     {path: "/ordershortage", component: M_ordershortage}, //缺货处理
     {path: "/orderdetail", component: M_orderdetail}, //订单详情
     {path: "/ordertracking", component: M_ordertracking}, //订单跟踪
+
   ]
 });

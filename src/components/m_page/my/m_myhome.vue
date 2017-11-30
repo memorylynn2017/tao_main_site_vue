@@ -10,7 +10,7 @@
                         <a class="mui-navigate-right" href="#">
                             <img class="mui-pull-left head-img" id="head-img" src="https://pro.modao.cc/uploads3/images/1208/12080594/raw_1503471295.png">
                             <div class="mui-media-body">
-                                <p class="name fs-16">Photoshop</p>
+                                <p class="name fs-16">利松</p>
                                 <p class="vip fs-12">批发会员</p>
                             </div>
                         </a>
@@ -60,9 +60,7 @@
                 <ul class="mui-table-view mui-table-view-chevron mt10">
                     <li class="mui-table-view-cell">
                         <a href="/mypurse" class="mui-navigate-right">
-                            <span class="mui-icon iconfont icon-qianbao"></span>
-                            <span>我的钱包</span>
-                        </a>
+                            <span class="mui-icon iconfont icon-qianbao"></span>我的钱包</a>
                     </li>
                 </ul>
 
@@ -110,7 +108,7 @@
                             <span class="mui-icon mui-icon-help"></span>帮助中心</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="#">
+                        <a href="tel:4000301668">
                             <span class="mui-icon mui-icon-phone"></span>4000301668</a>
                     </li>
                 </ul>
