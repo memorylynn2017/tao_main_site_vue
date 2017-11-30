@@ -31,13 +31,13 @@
         </div>
 
         <nav class="mui-bar mui-bar-tab footer-btn40">
-            <a class="mui-btn mui-btn-block btn-receiver" href="javascript:;">去支付</a>
+            <a id="btn_pay" class="mui-btn mui-btn-block btn-receiver" href="javascript:;">去支付</a>
         </nav>
 
-        <div class="pay-frame mui-block">
+        <div class="pay-frame mui-hidden">
             <div class="pay-box">
                 <div class="pay-title">
-                    <a class="mui-icon mui-icon-closeempty mui-pull-left" href="javascript:;"></a>
+                    <a id="btn_close" class="mui-icon mui-icon-closeempty mui-pull-left" href="javascript:;"></a>
                     <span>支付</span>
                 </div>
                 <div class="pay-con">
@@ -72,6 +72,14 @@ export default {
         headBar
     }
 }
+$(function() {
+    $('#btn_pay').on('click',function(){
+        $('.pay-frame').removeClass('mui-hidden').addClass('mui-block');
+    })
+    $('#btn_close').on('click',function(){
+        $('.pay-frame').addClass('mui-hidden');
+    })
+});
 </script>
 <style lang="less" scoped>
 // 底部按钮
