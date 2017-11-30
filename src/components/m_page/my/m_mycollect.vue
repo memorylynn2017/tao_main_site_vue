@@ -39,7 +39,7 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
+                    <a class="mui-btn btn-addcart" href="/carthave">加入进货车</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
@@ -50,7 +50,7 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
+                    <a class="mui-btn btn-addcart" href="/carthave">加入进货车</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
@@ -61,7 +61,7 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
+                    <a class="mui-btn btn-addcart" href="/carthave">加入进货车</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
@@ -72,7 +72,7 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
+                    <a class="mui-btn btn-addcart" href="/carthave">加入进货车</a>
                 </li>
                 <li class="mui-table-view-cell mui-media">
                     <a href="javascript:;">
@@ -83,7 +83,7 @@
                             <p class="price">￥25.00</p>
                         </div>
                     </a>
-                    <a class="mui-btn btn-addcart" href="javascript:;">加入进货车</a>
+                    <a class="mui-btn btn-addcart" href="/carthave">加入进货车</a>
                 </li>
 
             </ul>
