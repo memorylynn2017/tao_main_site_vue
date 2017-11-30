@@ -26,7 +26,7 @@
                         </a>
                     </li>
                     <li class="mui-table-view-cell mui-media mui-col-xs-6">
-                        <a href="javascript:;">
+                        <a href="/carthave">
                             <span class="mui-icon iconfont icon-gouwuche1 icon_cart">
                                 <span class="mui-badge">999</span>
                             </span>
