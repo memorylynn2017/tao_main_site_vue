@@ -15,7 +15,8 @@
                         <p style="color: #323232;font-size: 14.0px;">可用余额(￥)</p>
                         <br>
                         <span class="fs-24"><strong>0.00</strong></span>
-                        <button type="button" class="mui-btn mui-btn-danger" style="width:100px;height:30px;">交易帐单</button>
+                        <!-- <button type="button" class="mui-btn mui-btn-danger" style="width:100px;height:30px;">交易帐单</button> -->
+                        <a href="/bill" class="mui-btn mui-btn-danger" style="width:100px;height:30px;">交易帐单</a>
                     </li>
                 </ul>
 
@@ -23,7 +24,7 @@
 
                 <ul class="mui-table-view mui-table-view-chevron mt10">
                     <li class="mui-table-view-cell">
-                        <a href="#" class="mui-navigate-right">
+                        <a href="/recharge" class="mui-navigate-right">
                             <span>线下充值提交</span>
                         </a>
                     </li>
@@ -31,7 +32,7 @@
 
                 <ul class="mui-table-view mui-table-view-chevron mt10">
                     <li class="mui-table-view-cell">
-                        <a href="#" class="mui-navigate-right">
+                        <a href="/refundrecord" class="mui-navigate-right">
                            </span>订单退款记录</a>
                     </li>
                     
@@ -39,11 +40,11 @@
 
                 <ul class="mui-table-view mui-table-view-chevron mt10">
                     <li class="mui-table-view-cell">
-                        <a href="#" class="mui-navigate-right">
+                        <a href="/cash" class="mui-navigate-right">
                            </span>我要提现</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="#" class="mui-navigate-right">
+                        <a href="/cashrecord" class="mui-navigate-right">
                           </span>提现记录</a>
                     </li>
                 </ul>

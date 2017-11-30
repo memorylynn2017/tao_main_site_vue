@@ -54,6 +54,14 @@ import M_myhome from "../components/m_page/my/m_myhome";
 //M_myhome_content
 // （1）、 我的钱包
 import M_mypurse from "../components/m_page/my/m_mypurse";
+import M_bill from "../components/m_page/my/m_bill";  //交易账单
+import M_recharge from "../components/m_page/my/m_recharge";        //充值
+import M_rechargealibaba from "../components/m_page/my/m_rechargealibaba";  //支付宝充值
+import M_rechargebank from "../components/m_page/my/m_rechargebank";  //网银充值
+import M_rechargeline from "../components/m_page/my/m_rechargeline";  //线下充值
+import M_refundrecord from "../components/m_page/my/m_refundrecord";  //退款记录
+import M_cash from "../components/m_page/my/m_cash";  //提现
+import M_cashrecord from "../components/m_page/my/m_cashrecord";  //提现记录
 // （2）、 收藏商品
 import M_mycollect from "../components/m_page/my/m_mycollect";
 // （3）、 店铺关注
@@ -189,6 +197,14 @@ export default new Router({
       path: "/mypurse", //我的钱包
       component: M_mypurse
     },
+    {path: "/bill", component: M_bill},                 //交易账单
+    {path: "/recharge", component: M_recharge},         //充值
+    {path: "/rechargealibaba", component: M_rechargealibaba},   //支付宝充值
+    {path: "/rechargebank", component: M_rechargebank}, //网银充值
+    {path: "/rechargeline", component: M_rechargeline}, //线下充值
+    {path: "/refundrecord", component: M_refundrecord}, //退款记录
+    {path: "/cash", component: M_cash},                 //提现
+    {path: "/cashrecord", component: M_cashrecord},     //提现记录
     {
       path: "/mycollect", //我的收藏商品
       component: M_mycollect
