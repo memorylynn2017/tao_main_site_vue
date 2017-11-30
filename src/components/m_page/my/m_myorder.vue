@@ -58,7 +58,7 @@
                                         <span>合计</span>
                                         <span class="title">￥3706.00</span>
                                     </div>
-                                    <a class="mui-btn mui-pull-right te-btn red-block" href="javascript:;">立即付款</a>
+                                    <a class="mui-btn mui-pull-right te-btn red-block" href="/pay">立即付款</a>
                                 </h5>
                             </li>
                             <li class="mui-table-view-cell mui-media">
@@ -361,7 +361,7 @@
                                     </div>
                                     <span class="mui-pull-right te-date">2017-08-21 11:36</span>
                                 </h5>
-                                <a class="te-pics" href="javascript:;">
+                                <a class="te-pics" href="/orderdetail">
                                     <ul class="mui-table-view mui-grid-view top-noline bottom-noline">
                                         <li class="mui-table-view-cell mui-media mui-col-xs-3">
                                             <img src="https://pro.modao.cc/uploads3/images/1190/11902879/raw_1502867980.jpeg" alt="">
@@ -396,7 +396,7 @@
                                     </div>
                                     <span class="mui-pull-right te-date">2017-08-21 11:36</span>
                                 </h5>
-                                <a class="te-pics" href="javascript:;">
+                                <a class="te-pics" href="/orderdetail">
                                     <ul class="mui-table-view mui-grid-view top-noline bottom-noline">
                                         <li class="mui-table-view-cell mui-media mui-col-xs-3">
                                             <img src="https://pro.modao.cc/uploads3/images/1190/11902879/raw_1502867980.jpeg" alt="">
@@ -431,7 +431,7 @@
                                     </div>
                                     <span class="mui-pull-right te-date">2017-08-21 11:36</span>
                                 </h5>
-                                <a class="te-pics" href="javascript:;">
+                                <a class="te-pics" href="/orderdetail">
                                     <ul class="mui-table-view mui-grid-view top-noline bottom-noline">
                                         <li class="mui-table-view-cell mui-media mui-col-xs-3">
                                             <img src="https://pro.modao.cc/uploads3/images/1190/11902879/raw_1502867980.jpeg" alt="">

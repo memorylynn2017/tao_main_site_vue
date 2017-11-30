@@ -77,6 +77,20 @@ import M_myorder from "../components/m_page/my/m_myorder";
 // （4）、 已取消
 
 
+//确认订单
+// （1）、 收银台
+import M_pay from "../components/m_page/order/m_pay";
+// （2）、 确认订单
+import M_orderconfirm from "../components/m_page/order/m_orderconfirm";
+// （3）、 配送方式
+import M_orderway from "../components/m_page/order/m_orderway";
+// （4）、 缺货处理
+import M_ordershortage from "../components/m_page/order/m_ordershortage";
+// （5）、 订单详情
+import M_orderdetail from "../components/m_page/order/m_orderdetail";
+// （6）、 订单跟踪
+import M_ordertracking from "../components/m_page/order/m_ordertracking";
+
 
 
 
@@ -89,7 +103,6 @@ export default new Router({
       path: "/", //首页1
       component: M_index
     },
-
     {
       path: "/index", //首页2
       component: M_index2
@@ -198,7 +211,14 @@ export default new Router({
     {
       path: "/myorder", //订单
       component: M_myorder
-    }
+    },
     
+    //确认订单
+    {path: "/pay", component: M_pay}, //收银台
+    {path: "/orderconfirm", component: M_orderconfirm}, //确认订单
+    {path: "/orderway", component: M_orderway}, //配送方式
+    {path: "/ordershortage", component: M_ordershortage}, //缺货处理
+    {path: "/orderdetail", component: M_orderdetail}, //订单详情
+    {path: "/ordertracking", component: M_ordertracking}, //订单跟踪
   ]
 });

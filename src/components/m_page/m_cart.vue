@@ -13,7 +13,7 @@
             </div>
 
             <!-- 有 -->
-            <div class="cart-have mui-block mt10">
+            <div class="cart-have mui-block mt10 mui-hidden">
                 <h5 class="mui-content-padded cart-nav">
                     <span class="mui-pull-left title">共有3款商品</span>
                     <span class="mui-icon iconfont icon-lajixiang mui-pull-right del"></span>
@@ -87,7 +87,7 @@
         <footerBar></footerBar>
 
         <!--结算功能-->
-        <nav id="footer_settlement" class="mui-bar mui-bar-tab te-settlement">
+        <nav id="footer_settlement" class="mui-bar mui-bar-tab te-settlement mui-hidden">
             <div class="mui-input-row mui-checkbox mui-left mui-pull-left settlement-all">
                 <input name="checkbox" value="1" type="checkbox">
                 <span>全选 合计: ￥552.00</span>
