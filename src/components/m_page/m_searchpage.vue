@@ -5,9 +5,11 @@
 
         <div class="mui-content search">
             <div class="mui-content-padded searchtitle">
+                <a href="/search">
                 <div class="mui-input-row mui-search">
                     <input type="search" class="mui-input-clear" placeholder="搜索商品名称或编号">
                 </div>
+                </a>
             </div>
             <div class="mui-row mui-fullscreen searchcontent">
                 <div class="mui-col-xs-3">
@@ -18,17 +20,77 @@
                 </div>
             </div>
         </div>
+
+        <!-- 尾部 -->
+        <footerBar :footerNavId="footerNavId"></footerBar>
     </div>
 </template>
 
-
+<style lang="less">
+.mui-segmented-control.mui-segmented-control-inverted.mui-segmented-control-vertical .mui-control-item {
+    border: 2px solid transparent;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item{
+    width:100%;
+    line-height: 50px;
+    font-size: 14px;
+    color: #323232;
+    border: 2px solid transparent;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+    color: #e51c23;
+    border-left: 2px solid #e51c23;
+    border-bottom: 0!important;
+    background: #ffffff;
+}
+//================
+.procducttype {
+    .title {
+        line-height: 50px;
+        color: #323232;
+        margin: 2px 0;
+    }
+    .mui-table-view:before,.mui-table-view:after {
+        height: 0;
+    }
+    .mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+        font-size: 14px;
+        color: #323232;
+    }
+}
+.mui-control-content {
+    display: block;
+}
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-object {
+    width: 60%;
+    max-width: 60%;
+    height: auto;
+}
+.search {
+    .searchtitle {
+        .mui-search {
+            .mui-placeholder {
+                font-size: 14px;
+                line-height: 36px;
+                color: #888;
+                .mui-icon {
+                    font-size: 16px;
+                    color: #888;
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+}
+</style>
 <style lang="less" scoped>
 .search {
     .mui-row.mui-fullscreen>[class*="mui-col-"] {
         height: 100%;
     }
     .mui-fullscreen {
-        top: 56px;
+        top: 100px;
+        margin-bottom: 50px;
     }
     
     .mui-col-xs-3,
@@ -53,7 +115,9 @@
 
 
     .searchtitle {
-        margin: 10px;
+        margin: 0;
+        padding: 10px;
+        background-color: #f7f7f7;
         input[type=search] {
             height: 36px;
             border: 1px solid #e6e6e6;
@@ -120,14 +184,17 @@
 }
 </style>
 <script>
+import headBar from "../public/m/header-oth";
+import footerBar from "../public/m/footer";
 export default {
   name: 'app',
     data() {
         return {
             headTitle: '搜索',   //导航标题
+            footerNavId: 2,   //底部导航id
         };
     },
-    mounted(){
+    mounted() {
         mui.init();
         
         var controls = document.getElementById("segmentedControls");
@@ -139,9 +206,7 @@ export default {
             m = left.length + 1,
             n = 0;
         for (; i < m; i++) {
-            // html.push('<a class="mui-control-item" data-index="' + (i - 1) + '" href="#content' + i + '">' + left[i - 1] +
-            //     '</a>');
-            html.push('<a class="mui-control-item" style="width:100%;line-height: 50px;border: 2px solid transparent;font-size: 14px;line-height: 50px;color: #323232;" data-index="' + (i - 1) + '" href="#content' + i + '">' + left[i - 1] +
+            html.push('<a class="mui-control-item" data-index="' + (i - 1) + '" href="#content' + i + '">' + left[i - 1] +
                 '</a>');
         }
         controls.innerHTML = html.join('');
@@ -371,9 +436,7 @@ export default {
         }];
         for (i = 1; i < m; i++) {
             var title = right[i - 1].title
-            // html.push('<div id="content' + i + '" class="mui-control-content"><h5 class="title">' + title +
-            //     '</h5><ul class="mui-table-view mui-grid-view">');
-            html.push('<div id="content' + i + '" class="mui-control-content" style="display: block;"><h5 class="title">' + title +
+            html.push('<div id="content' + i + '" class="mui-control-content"><h5 class="title">' + title +
                 '</h5><ul class="mui-table-view mui-grid-view">');
 
             var $this = right[i - 1].products;
@@ -383,13 +446,9 @@ export default {
                 var url = $this[j - 1].url;
                 var img = $this[j - 1].img;
                 var des = $this[j - 1].des;
-                // html.push('<li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="' + url +
-                //     '"><img class="mui-media-object" src="' + img + '"><div class="mui-media-body">' + des +
-                //     '</div></a></li>');
                 html.push('<li class="mui-table-view-cell mui-media mui-col-xs-4"><a href="' + url +
-                    '"><img class="mui-media-object" style="width: 60%;max-width: 60%;height: auto;" src="' + img + '"><div class="mui-media-body">' + des +
+                    '"><img class="mui-media-object" src="' + img + '"><div class="mui-media-body">' + des +
                     '</div></a></li>');
-
             }
             html.push('</ul></div>');
         }
@@ -490,9 +549,10 @@ export default {
             });
 
         }
+    },
+    components: {
+        headBar,
+        footerBar
     }
 };
-$(function() {
-    
-})
 </script>

@@ -12,17 +12,17 @@
                         <span class="mui-icon mui-icon-arrowdown"></span>
                     </a>
                 </li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3 active">
+                <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3 tab_type active">
                     <a href="#time">
                         <span>时间</span>
                     </a>
                 </li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+                <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3 tab_type">
                     <a href="#price">
                         <span>价格</span>
                     </a>
                 </li>
-                <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+                <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3 tab_type">
                     <a href="#number">
                         <span>销量</span>
                     </a>
@@ -121,13 +121,21 @@ $(function() {
 
     mui('.mui-scroll-wrapper').scroll();
     mui('body').on('shown', '.mui-popover', function(e) {
-        //console.log('shown', e.detail.id);//detail为当前popover元素
+        // console.log('shown', e.detail.id);//detail为当前popover元素
     });
     mui('body').on('hidden', '.mui-popover', function(e) {
-        //console.log('hidden', e.detail.id);//detail为当前popover元素
-    }); 
+        // console.log('hidden', e.detail.id);//detail为当前popover元素
+    });
+    $('.tab_type').on('click',function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    })
 });
 </script>
+<style lang="less">
+.mui-popover .mui-popover-arrow{
+    display: none;
+}
+</style>
 <style lang="less" scoped>
 .nav-fun{
     position: fixed;
