@@ -6,22 +6,40 @@
         <!-- 二级导航 -->
         <ul class="selectbox mui-table-view mui-grid-view mui-grid-9">
             <li class="mui-table-view-cell mui-media mui-col-xs-5 mui-col-sm-4">
-                <a href="#date">
+                <!-- <a href="#date">
                     <span>&nbsp;&nbsp;&nbsp;2017-11-23</span>
                     <span class="mui-icon mui-icon-arrowdown"></span>
-                </a>
+                </a> -->
+                <select name="" id="">
+                    <option value="0">2017-11-23</option>
+                    <option value="1">2017-11-22</option>
+                    <option value="2">2017-11-21</option>
+                    <option value="3">2017-11-20</option>
+                </select>
+                <span class="mui-icon mui-icon-arrowdown arrow-icon"></span>
             </li>
             <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-4">
-                <a href="#product">
+                <!-- <a href="#product">
                     <span>&nbsp;&nbsp;&nbsp;女装</span>
                     <span class="mui-icon mui-icon-arrowdown"></span>
-                </a>
+                </a> -->
+                <select name="" id="">
+                    <option v-for="type in types">{{type.name}}</option>
+                </select>
+                <span class="mui-icon mui-icon-arrowdown arrow-icon"></span>
             </li>
             <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
-                <a href="#all">
+                <!-- <a href="#all">
                     <span>综合</span>
                     <span class="mui-icon mui-icon-arrowdown"></span>
-                </a>
+                </a> -->
+                <select name="" id="">
+                    <option value="0">综合</option>
+                    <option value="1">价格</option>
+                    <option value="2">时间</option>
+                    <option value="3">销量</option>
+                </select>
+                <span class="mui-icon mui-icon-arrowdown arrow-icon"></span>
             </li>
             <li id="btn_page" class="mui-table-view-cell mui-media mui-col-xs-1 mui-col-sm-1">
                 &nbsp;
@@ -182,7 +200,16 @@ export default {
     name: 'app',
     data() {
         return {
-            headTitle: '每日最新'
+            headTitle: '每日最新',  //导航标题
+            footerNavId: 1,   //底部导航id
+            types: [
+                {id: 1,name: '女装'},
+                {id: 2,name: '男装'},
+                {id: 3,name: '童装'},
+                {id: 4,name: '内衣'},
+                {id: 5,name: '箱包'},
+                {id: 6,name: '鞋帽'},
+            ],
         };
     },
     components: {
@@ -216,6 +243,16 @@ export default {
         border: none;
         span:first-child {
             font-size: 0.85em;
+        }
+        // 下拉
+        select{
+            margin-bottom: 0;
+            padding: 0 0 0 15px;
+        }
+        .arrow-icon{
+            position: absolute;
+            right: 20px;
+            top: 8px;
         }
     }
     &.mui-grid-9 .mui-media .mui-icon {
