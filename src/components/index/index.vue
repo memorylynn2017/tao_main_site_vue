@@ -256,7 +256,7 @@
         </div>
 
         <!-- 尾部 -->
-        <footerBar></footerBar>
+        <footerBar :footerNavId="footerNavId"></footerBar>
     </div>
 </template>
 
@@ -267,7 +267,7 @@ export default {
     name: 'app',
     data() {
         return {
-            msg: 'Welcome to m.taoee.com'
+            footerNavId: 1,   //底部导航id
         }
     },
     components: {

@@ -37,7 +37,7 @@
         </div>
 
         <!-- 尾部 -->
-        <footerBar></footerBar>
+        <footerBar :footerNavId="footerNavId"></footerBar>
     </div>
 </template>
 
@@ -48,7 +48,8 @@ export default {
     name: 'app',
     data() {
         return {
-            headTitle: '发现'
+            headTitle: '发现',    //导航标题
+            footerNavId: 3,     //底部导航id
         }
     },
     components: {

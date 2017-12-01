@@ -185,12 +185,13 @@
             <div class="checkresult">
                 <div class="mui-input-row">
                     <label>已选</label>
-                    <textarea id="textarea" placeholder="">蓝色: S/1件，M/1件，L/1件 粉色: M/1件</textarea>
+                    <p class="check-con">蓝色: S/1件，M/1件，L/1件 <br/>粉色: M/1件</p>
+                    <!-- <textarea id="textarea" placeholder="">蓝色: S/1件，M/1件，L/1件 粉色: M/1件</textarea> -->
                 </div>
             </div>
             <div class="btnlist">
                 <a class="btn return" href="javascript:;">返回</a>
-                <a class="btn confirm" href="javascript:;">确定(3)</a>
+                <a class="btn confirm" @click="confirm" href="javascript:;">确定(3)</a>
             </div>
         </div>
 
@@ -221,6 +222,12 @@ export default {
     },
     components: {
         headBar
+    },
+    methods:{
+        //确认商品
+        confirm: ()=>{
+            console.log('123qwe');
+        }
     }
 };
 </script>
@@ -537,10 +544,20 @@ export default {
                 color: #323232;
             }
         }
-        .mui-input-row label~textarea {
+        // .mui-input-row label~textarea {
+        //     width: 80%;
+        //     margin-bottom: 0;
+        //     padding-left: 8px;
+        //     border: 1px solid #e51c23;
+        //     font-size: 14px;
+        //     color: #323232;
+        //     border-radius: 0;
+        // }
+        .mui-input-row .check-con{
+            display: inline-block;
             width: 80%;
             margin-bottom: 0;
-            padding-left: 8px;
+            padding: 8px;
             border: 1px solid #e51c23;
             font-size: 14px;
             color: #323232;

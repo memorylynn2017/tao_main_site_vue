@@ -118,7 +118,7 @@
         </div>
 
         <!-- 尾部 -->
-        <footerBar></footerBar>
+        <footerBar :footerNavId="footerNavId"></footerBar>
     </div>
 </template>
 
@@ -127,7 +127,9 @@ import footerBar from "../../public/m/footer";
 export default {
     name: 'app',
     data() {
-        return {}
+        return {
+            footerNavId: 5,     //底部导航id
+        }
     },
     components: {
         footerBar

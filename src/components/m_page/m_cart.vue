@@ -84,7 +84,7 @@
         </div>
 
         <!-- 尾部 -->
-        <footerBar></footerBar>
+        <footerBar :footerNavId="footerNavId"></footerBar>
 
         <!--结算功能-->
         <nav id="footer_settlement" class="mui-bar mui-bar-tab te-settlement mui-hidden">
@@ -106,7 +106,8 @@ export default {
     name: 'app',
     data() {
         return {
-            headTitle: '进货车'
+            headTitle: '进货车',   //导航标题
+            footerNavId: 4,     //底部导航id
         }
     },
     components: {

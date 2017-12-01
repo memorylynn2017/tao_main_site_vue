@@ -108,7 +108,7 @@ export default {
     name: 'app',
     data() {
         return {
-            headTitle: '全部女装'
+            headTitle: '全部女装'   //导航标题
         }
     },
     components: {

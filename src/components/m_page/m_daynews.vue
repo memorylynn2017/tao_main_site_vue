@@ -24,7 +24,7 @@
                     <span class="mui-icon mui-icon-arrowdown"></span>
                 </a> -->
                 <select name="" id="">
-                    <option v-for="type in types">{{type.name}}</option>
+                    <option v-for="type in types" :key="type.id">{{type.name}}</option>
                 </select>
                 <span class="mui-icon mui-icon-arrowdown arrow-icon"></span>
             </li>
