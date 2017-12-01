@@ -23,12 +23,12 @@
                     <span>&nbsp;&nbsp;&nbsp;女装</span>
                     <span class="mui-icon mui-icon-arrowdown"></span>
                 </a> -->
-                <select name="" id="" v-model="fruit">
+                <select name="" id="" v-model="ty">
                     <option v-for="type in types" :key="type.id">{{type.name}}</option>
                 </select>
                 <span class="mui-icon mui-icon-arrowdown arrow-icon"></span>
-                <br/>
-                <p>{{ fruit }}</p>
+                <!-- <br/>
+                <p>{{ fruit }}</p> -->
             </li>
             <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
                 <!-- <a href="#all">
