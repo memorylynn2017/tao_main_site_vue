@@ -543,7 +543,6 @@ export default {
                 contentsElem.scrollTop = contentTops[index];
             };
             mui(controlsElem).on('tap', '.mui-control-item', function (e) {
-                console.log(12321)
                 scrollTo(this.getAttribute('data-index'));
                 return false;
             });
