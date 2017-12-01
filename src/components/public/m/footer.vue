@@ -5,7 +5,7 @@
             <span class="mui-icon iconfont icon-home"></span>
             <span class="mui-tab-label">首页</span>
         </a>
-        <a class="mui-tab-item" :class="{'mui-active': 2==footerNavId}" href="/search">
+        <a class="mui-tab-item" :class="{'mui-active': 2==footerNavId}" href="/searchpage">
             <span class="mui-icon iconfont icon-shouye5fenlei1"></span>
             <span class="mui-tab-label">搜索</span>
         </a>
