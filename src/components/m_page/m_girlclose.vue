@@ -32,37 +32,22 @@
 
         <div class="girlclose">
             <div class="mui-content">
-                <h6 class="num">1453 商品</h6>
+                <h6 class="num">{{girlClothes_num}} 商品</h6>
                 <ul class="procuctbox mui-table-view mui-grid-view">
-                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
-                        <a href="/M_produclists">
-                            <img class="mui-media-object" src="https://pro.modao.cc/uploads3/images/1140/11404475/raw_1501155257.jpeg">
-                            <div class="mui-media-body">蕾丝雪纺连衣裙女装夏...</div>
-                            <div class="price">￥25.00</div></a></li>
-                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
-                        <a href="/m_produclists">
-                            <img class="mui-media-object" src="https://pro.modao.cc/uploads3/images/1140/11404475/raw_1501155257.jpeg">
-                            <div class="mui-media-body">蕾丝雪纺连衣裙女装夏...</div>
-                            <div class="price">￥25.00</div></a></li>
-                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
-                        <a href="/M_produclists"><img class="mui-media-object" src="https://pro.modao.cc/uploads3/images/1145/11455325/raw_1501411974.jpeg">
-                            <div class="mui-media-body">8055#实拍 2017年秋季...</div>
-                            <div class="price">￥25.00</div></a></li>
-                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
-                        <a href="/M_produclists">
-                            <img class="mui-media-object" src="https://pro.modao.cc/uploads3/images/1145/11455325/raw_1501411974.jpeg">
-                            <div class="mui-media-body">8055#实拍 2017年秋季...</div>
-                            <div class="price">￥25.00</div></a></li>
-                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <!-- <li class="mui-table-view-cell mui-media mui-col-xs-6">
                         <a href="/M_produclists">
                             <img class="mui-media-object" src="https://pro.modao.cc/uploads3/images/1125/11254297/raw_1500731190.jpeg">
                             <div class="mui-media-body">蕾丝雪纺连衣裙女装夏...</div>
-                            <div class="price">￥25.00</div></a></li>
-                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
-                        <a href="/M_produclists">
-                            <img class="mui-media-object" src="https://pro.modao.cc/uploads3/images/1125/11254297/raw_1500731190.jpeg">
-                            <div class="mui-media-body">蕾丝雪纺连衣裙女装夏...</div>
-                            <div class="price">￥25.00</div></a></li>
+                            <div class="price">￥25.00</div></a></li> -->
+                    <li v-for="item in girlClothes" class="mui-table-view-cell mui-media mui-col-xs-6">
+                        <router-link :to="{path:'/M_produclists',query:{id: item.id}}">
+                            <div class="mui-media-object">
+                                <img :src="item.pic">
+                            </div>
+                            <div class="mui-media-body">{{item.name}}</div>
+                            <div class="price">￥{{item.price}}</div>
+                        </router-link>
+                    </li>
                 </ul>
             </div>
             <div id="addPopover" class="mui-popover mui-content">
@@ -104,15 +89,33 @@
 
 <script>
 import headBar from "../public/m/header-oth";
+import axios from "axios";
 export default {
     name: 'app',
     data() {
         return {
-            headTitle: '全部女装'   //导航标题
+            headTitle: '全部女装',   //导航标题
+            girlClothes: '',
+            girlClothes_num: 0,
         }
     },
     components: {
         headBar
+    },
+    mounted () {
+      this.getGirlClothes();
+    },
+    methods:{
+        getGirlClothes(){
+            let _protocol = document.location.protocol;
+            let _host = window.location.hostname;
+            let _url = _protocol+"//"+_host+":3000";
+
+            axios.get(_url + "/girlclothes").then((result)=>{
+                this.girlClothes = result.data;
+                this.girlClothes_num = result.data.length;
+            })
+        }
     }
 }
 
@@ -197,6 +200,14 @@ $(function() {
     }
     .procuctbox {
         .mui-table-view-cell {
+            .mui-media-object {
+                margin-bottom: 5px;
+                height: 200px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                }
+            }
             .mui-media-body {
                 font-size: 12px;
                 color: #323232;

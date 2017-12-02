@@ -1,0 +1,81 @@
+{
+    "userInfo": [
+        {
+            "user_name": "admin",
+            "pass_word": "123qwe"
+        },
+        {
+            "user_name": "jx",
+            "pass_word": "123qwe"
+        }
+    ],
+    "girlclothes": [
+        {
+            "id": 1,
+            "name": "823#实拍雪纺衫短袖女士夏装2017新款韩百搭显瘦超仙甜美喇叭袖",
+            "pic": "http://www.taoee.com/upload/image/a1cb3fc975804f888550903bd0f770e3.jpg",
+            "price": "30.00"
+        },
+        {
+            "id": 2,
+            "name": "夏季新款时尚蕾丝拼接腰部镂空气质小女人连衣裙#3376",
+            "pic": "http://www.taoee.com/upload/image/33a0bbdd156f4fb594a2cb5c24d4f26d.jpg",
+            "price": "41.00"
+        },
+        {
+            "id": 3,
+            "name": "实拍2017秋装新款韩版皮衣女短外套机车PU皮显瘦帅气夹克上衣",
+            "pic": "http://www.taoee.com/upload/image/684c5b526d8f47d2bce8b556c43e3806.jpg",
+            "price": "63.00"
+        },
+        {
+            "id": 4,
+            "name": "823#实拍雪纺衫短袖女士夏装2017新款韩百搭显瘦超仙甜美喇叭袖",
+            "pic": "http://www.taoee.com/upload/image/a1cb3fc975804f888550903bd0f770e3.jpg",
+            "price": "30.00"
+        },
+        {
+            "id": 5,
+            "name": "823#实拍雪纺衫短袖女士夏装2017新款韩百搭显瘦超仙甜美喇叭袖",
+            "pic": "http://www.taoee.com/upload/image/a1cb3fc975804f888550903bd0f770e3.jpg",
+            "price": "80.00"
+        }
+    ],
+    "bodyclothes": [
+        
+    ],
+
+
+    "products":[
+        {
+            "id": 1,
+            "name": "823#实拍雪纺衫短袖女士夏装2017新款韩百搭显瘦超仙甜美喇叭袖",
+            "pic": "http://www.taoee.com/upload/image/a1cb3fc975804f888550903bd0f770e3.jpg",
+            "piclist":[
+                "http://gd1.alicdn.com/imgextra/i4/542905766/TB2T7c1hSB0XKJjSZFsXXaxfpXa_!!542905766.jpg",
+                "http://gd4.alicdn.com/imgextra/i4/542905766/TB27YWryS8mpuFjSZFMXXaxpVXa_!!542905766.jpg",
+                "http://gd4.alicdn.com/imgextra/i4/542905766/TB2sj.oeZPRfKJjSZFOXXbKEVXa_!!542905766.jpg"
+            ],
+            "price": "30.00",
+            "colorlist":["蓝色", "白色", "粉色", "黑色", "天蓝色"],
+            "sizelist":["S", "M", "L", "XL"],
+            "update": "2017-08-17",
+            "desc": ""
+        },
+        {
+            "id": 2,
+            "name": "夏季新款时尚蕾丝拼接腰部镂空气质小女人连衣裙#3376",
+            "pic": "http://www.taoee.com/upload/image/a1cb3fc975804f888550903bd0f770e3.jpg",
+            "piclist":[
+                "http://gd1.alicdn.com/imgextra/i4/542905766/TB2T7c1hSB0XKJjSZFsXXaxfpXa_!!542905766.jpg",
+                "http://gd4.alicdn.com/imgextra/i4/542905766/TB27YWryS8mpuFjSZFMXXaxpVXa_!!542905766.jpg",
+                "http://gd4.alicdn.com/imgextra/i4/542905766/TB2sj.oeZPRfKJjSZFOXXbKEVXa_!!542905766.jpg"
+            ],
+            "price": "43.00",
+            "colorlist":["蓝色", "白色", "粉色", "黑色", "天蓝色"],
+            "sizelist":["S", "M", "L", "XL"],
+            "update": "2017-08-17",
+            "desc": ""
+        }
+    ]
+}

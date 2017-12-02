@@ -1,5 +1,5 @@
 <template>
-    <div class="app">
+    <div id="app">
         <!-- 头部 -->
         <headBar :headTitle="headTitle"></headBar>
         <div class="mui-content product-detail mb50">
@@ -8,61 +8,32 @@
                 <div class="mui-slider-group mui-slider-loop">
                     <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
                     <div class="mui-slider-item mui-slider-item-duplicate">
-                        <a href="#">
-                            <img src="https://pro.modao.cc/uploads3/images/1227/12275135/raw_1504084162.jpeg">
+                        <a href="javascript:;">
+                            <img :src="piclist_last">
                         </a>
                     </div>
-                    <!-- 第一张 -->
-                    <div class="mui-slider-item">
-                        <a href="#">
-                            <img src="https://pro.modao.cc/uploads3/images/1227/12275101/raw_1504084137.jpeg">
-                        </a>
-                    </div>
-                    <!-- 第二张 -->
-                    <div class="mui-slider-item">
-                        <a href="#">
-                        	<img src="https://pro.modao.cc/uploads3/images/1227/12275108/raw_1504084144.jpeg">
-                            
-                        </a>
-                    </div>
-                    <!-- 第三张 -->
-                    <div class="mui-slider-item">
-                        <a href="#">
-                        	 <img src="https://pro.modao.cc/uploads3/images/1227/12275118/raw_1504084152.jpeg">
-                           
-                        </a>
-                    </div>
-                     <div class="mui-slider-item">
-                        <a href="#">
-							 <img src="https://pro.modao.cc/uploads3/images/1227/12275127/raw_1504084157.jpeg">
-                           
-                        </a>
-                    </div>
-                    <!-- 第四张 -->
-                    <div class="mui-slider-item">
-                        <a href="#">
 
-                            <img src="https://pro.modao.cc/uploads3/images/1227/12275135/raw_1504084162.jpeg">
+                    <div v-for="pic in piclist" class="mui-slider-item">
+                        <a href="javascript:;">
+                            <img :src="pic">
                         </a>
                     </div>
+
                     <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
                     <div class="mui-slider-item mui-slider-item-duplicate">
-                        <a href="#">
-                            <img src="https://pro.modao.cc/uploads3/images/1227/12275101/raw_1504084137.jpeg">
+                        <a href="javascript:;">
+                            <img :src="piclist_first">
                         </a>
                     </div>
                 </div>
                 <div class="mui-slider-indicator">
-                    <div class="mui-indicator mui-active"></div>
-                    <div class="mui-indicator"></div>
-                    <div class="mui-indicator"></div>
-                    <div class="mui-indicator"></div>
+                    <div v-for="(pic,index) in piclist" class="mui-indicator" :key="index" :class="{'mui-active': !index}"></div>
                 </div>
             </div>
             <div class="product-msg">
-                <p class="des">1591#蕾丝连衣裙蕾丝拼接网纱吊带薄款性感V领低胸流苏吊带无袖连衣裙</p>
+                <p class="des">{{headTitle}}</p>
                 <div class="msg1 qf">
-                    <span class="price fl">￥48.00</span>
+                    <span class="price fl">￥{{price}}</span>
                     <span class="vip fl">VIP (登录查看)</span>
                     <button class="mui-btn fr">找同款</button>
                 </div>
@@ -70,7 +41,7 @@
                     <span class="fl">货号 1591</span>
                     <span class="fl">销量 1</span>
                     <span class="fl">收藏 2</span>
-                    <span class="fr">2017-08-17上新</span>
+                    <span class="fr">{{ update }}上新</span>
                 </div>
             </div>
             <ul class="mui-table-view kucun server">
@@ -86,11 +57,15 @@
             <ul class="mui-table-view checkmsg">
                 <li class="mui-table-view-cell">
                     <span class="label">颜色</span>
-                    <span class="checkitem"><i>蓝色</i><i>白色</i><i>粉色</i><i>黑色</i></span>
+                    <span class="checkitem">
+                        <i v-for="color in colorlist">{{color}}</i>
+                    </span>
                 </li>
                 <li class="mui-table-view-cell">
                     <span class="label">尺码</span>
-                    <span class="checkitem"><i>S</i><i>M</i><i>L</i><i>XL</i></span>
+                    <span class="checkitem">
+                        <i v-for="size in sizelist">{{size}}</i>
+                    </span>
                 </li>
             </ul>
             <ul class="mui-table-view kucun">
@@ -149,38 +124,31 @@
         <div id="picture" class="mui-popover mui-popover-action mui-popover-bottom" style="display: block!important;">
             <div class="checkbox">
                 <ul class="clearfix">
-                    <li>蓝色(3)</li>
+                    <!-- <li>蓝色(3)</li>
                     <li>白色</li>
                     <li>粉色(1)</li>
                     <li>黑色</li>
-                    <li>黄色</li>
+                    <li>黄色</li> -->
+                    <li v-for="color in colorlist">{{ color }}</li>
                 </ul>
             </div>
             <div class="numbox">
-                <div class="type clearfix">
+                <div v-for="(size,index) in sizelist" :key="index" class="type clearfix">
+                    <span class="label mui-pull-left">{{ size }}</span>
+                    <div class="mui-numbox mui-pull-right" data-numbox-min='0'>
+                        <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+                        <input class="mui-input-numbox" type="number" value="0" />
+                        <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+                    </div>
+                </div>
+                <!-- <div class="type clearfix">
                     <span class="label mui-pull-left">S</span>
                     <div class="mui-numbox mui-pull-right" data-numbox-min='0'>
                         <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
                         <input class="mui-input-numbox" type="number" />
                         <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
                     </div>
-                </div>
-                <div class="type clearfix">
-                    <span class="label mui-pull-left">M</span>
-                    <div class="mui-numbox mui-pull-right" data-numbox-min='0'>
-                        <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
-                        <input class="mui-input-numbox" type="number" />
-                        <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
-                    </div>
-                </div>
-                <div class="type clearfix">
-                    <span class="label mui-pull-left">L</span>
-                    <div class="mui-numbox mui-pull-right" data-numbox-min='0'>
-                        <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
-                        <input class="mui-input-numbox" type="number" />
-                        <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
-                    </div>
-                </div>
+                </div> -->
             </div>
             <div class="checkresult">
                 <div class="mui-input-row">
@@ -213,23 +181,62 @@
 
 <script>
 import headBar from "../public/m/header-oth";
+import axios from "axios";
 export default {
-  name: 'app',
+    name: 'app',
     data() {
         return {
-            headTitle: ' 1591#蕾丝连衣裙蕾丝拼接网纱吊带...'
-        };
+            id: 0,      //id
+            headTitle: '',  //导航标题
+            piclist: [],    //图片列表
+            piclist_first: '',  //第一张
+            piclist_last: '',   //最后一张
+            price: '',      //价格
+            colorlist: [],  //颜色列表
+            sizelist: [],   //尺寸列表
+            update: '',     //上架时间
+
+        }
     },
     components: {
         headBar
     },
+    created (){
+        this.id =this.$route.query.id;
+    },
+    mounted () {
+        this.getProductList();
+    },
     methods:{
+        getProductList(){
+            let _protocol = document.location.protocol;
+            let _host = window.location.hostname;
+            let _url = _protocol+"//"+_host+":3000";
+
+            axios.get(_url + "/products").then((result)=>{
+                var res = result.data;
+                for (var i=0;i<res.length; i++){
+                    if (this.id == res[i].id){
+                        this.headTitle = res[i].name;
+                        this.piclist = res[i].piclist;
+                        this.piclist_first = res[i].piclist[0];
+                        this.piclist_last = res[i].piclist[res[i].piclist.length-1];
+
+                        this.price = res[i].price;
+                        this.colorlist = res[i].colorlist;
+                        this.sizelist = res[i].sizelist;
+                        this.update = res[i].update;
+                    }
+                }
+            })
+        },
         //确认商品
-        confirm: ()=>{
+        // confirm: ()=>{
+        confirm (){
             console.log('123qwe');
         }
     }
-};
+}
 </script>
 
 
@@ -259,7 +266,7 @@ export default {
     color: #fff;
     text-align: center;
     .mui-badge{
-        margin-left: -15px;
+        margin-left: -20px;
         padding: 1px;
     }
 }
