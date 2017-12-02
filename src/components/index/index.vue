@@ -106,19 +106,19 @@
                     <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1193/11938059/raw_1502955822.jpeg" alt=""></span>
                     <span class="label">TOP100</span>
                 </a>
-                <a class="te-control-item" href="javascript:;">
+                <a class="te-control-item" href="/M_hometype">
                     <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1197/11971719/raw_1503045357.jpeg" alt=""></span>
                     <span class="label">6块6特批</span>
                 </a>
-                <a class="te-control-item" href="javascript:;">
+                <a class="te-control-item" href="/M_hometype">
                     <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1254/12544227/raw_1504927542.png" alt=""></span>
                     <span class="label">当季精选</span>
                 </a>
-                <a class="te-control-item" href="javascript:;">
+                <a class="te-control-item" href="/M_hometype">
                     <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1254/12543942/raw_1504926913.png" alt=""></span>
                     <span class="label">外贸热销</span>
                 </a>
-                <a class="te-control-item" href="javascript:;">
+                <a class="te-control-item" href="/M_hometype">
                     <span class="icon"><img src="https://pro.modao.cc/uploads3/images/1252/12526180/raw_1504852556.png" alt=""></span>
                     <span class="label">大码女装</span>
                 </a>

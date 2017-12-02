@@ -21,7 +21,7 @@ import M_sellerlists from "../components/m_page/m_sellerlists";
 // （3）、TOP100
 import M_top100 from "../components/m_page/m_top100";
 // （4）、6块6特批
-// ...
+import M_hometype from "../components/m_page/m_hometype";
 
 
 
@@ -169,6 +169,10 @@ export default new Router({
     {
       path: "/M_top100", //TOP100
       component: M_top100
+    },
+    {
+      path: "/M_hometype", //首页导航分类（6块6特批，当季精选，外贸热销，大码女装）
+      component: M_hometype
     },
     //分类导航
     {
