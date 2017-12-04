@@ -47,7 +47,6 @@ import M_girlclose from "../components/m_page/m_girlclose";
 
 import search from "../components/m_page/m_search";
 import searchpage from '../components/m_page/m_searchpage'  //搜索（尾部）
-import searchpage1 from '../components/m_page/m_searchpage1'  //搜索（尾部）1
 import M_find from "../components/m_page/m_find";
 import M_cart from "../components/m_page/m_cart"; //购物车-空
 import M_carthave from "../components/m_page/m_carthave"; //购物车-有
@@ -136,10 +135,6 @@ export default new Router({
     {
       path: "/searchpage", //搜索页面（尾部）
       component: searchpage
-    },
-    {
-      path: "/searchpage1", //搜索页面（尾部）
-      component: searchpage1
     },
     //主页_产品分类列表
     {
