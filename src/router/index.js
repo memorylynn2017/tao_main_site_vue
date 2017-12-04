@@ -47,6 +47,7 @@ import M_girlclose from "../components/m_page/m_girlclose";
 
 import search from "../components/m_page/m_search";
 import searchpage from '../components/m_page/m_searchpage'  //搜索（尾部）
+import searchpage1 from '../components/m_page/m_searchpage1'  //搜索（尾部）1
 import M_find from "../components/m_page/m_find";
 import M_cart from "../components/m_page/m_cart"; //购物车-空
 import M_carthave from "../components/m_page/m_carthave"; //购物车-有
@@ -110,13 +111,14 @@ import M_orderdetail from "../components/m_page/order/m_orderdetail";
 // （6）、 订单跟踪
 import M_ordertracking from "../components/m_page/order/m_ordertracking";
 
-
+import a from "../components/m_page/a";
+import b from "../components/m_page/b";
 
 
 Vue.use(Router);
 
 export default new Router({
-  mode: "history",
+  mode: "history",  //配置路由不会出现#号
   routes: [
     {
       path: "/", //首页1
@@ -134,6 +136,10 @@ export default new Router({
     {
       path: "/searchpage", //搜索页面（尾部）
       component: searchpage
+    },
+    {
+      path: "/searchpage1", //搜索页面（尾部）
+      component: searchpage1
     },
     //主页_产品分类列表
     {
@@ -266,5 +272,7 @@ export default new Router({
     {path: "/orderdetail", component: M_orderdetail}, //订单详情
     {path: "/ordertracking", component: M_ordertracking}, //订单跟踪
 
+    {path: "/a", component: a}, //订单跟踪
+    {path: "/b", component: b}, //订单跟踪
   ]
 });

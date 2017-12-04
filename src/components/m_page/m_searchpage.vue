@@ -1,15 +1,19 @@
 <template>
     <div id="app">
         <!-- 头部 -->
-        <headBar :headTitle="headTitle"></headBar>
+        <!-- <headBar :headTitle="headTitle"></headBar> -->
 
         <div class="mui-content search">
             <div class="mui-content-padded searchtitle">
-                <a href="/search">
-                <div class="mui-input-row mui-search">
+                <!-- <a href="/search"> -->
+                <a class="mui-icon mui-icon-home search-home mui-pull-left"  href=""></a>
+                <!-- <input  type="search" class="" placeholder="搜索商品名称或编号"> -->
+                <!-- <div class="mui-input-row mui-search mui-pull-left">
                     <input type="search" class="mui-input-clear" placeholder="搜索商品名称或编号">
-                </div>
-                </a>
+                </div> -->
+                <a class="input-a" href="/search">搜索商品名称或编号</a>
+                <a class="mui-icon iconfont icon-fangdajing mui-pull-right"  href=""></a>
+                <!-- </a> -->
             </div>
             <div class="mui-row mui-fullscreen searchcontent">
                 <div class="mui-col-xs-3">
@@ -22,7 +26,7 @@
         </div>
 
         <!-- 尾部 -->
-        <footerBar :footerNavId="footerNavId"></footerBar>
+        <!-- <footerBar :footerNavId="footerNavId"></footerBar> -->
     </div>
 </template>
 
@@ -68,19 +72,59 @@
 }
 .search {
     .searchtitle {
-        .mui-search {
-            .mui-placeholder {
-                font-size: 14px;
-                line-height: 36px;
-                color: #888;
-                .mui-icon {
-                    font-size: 16px;
-                    color: #888;
-                    margin-right: 6px;
-                }
-            }
+    //     .mui-search {
+    //         .mui-placeholder {
+    //             font-size: 14px;
+    //             line-height: 36px;
+    //             color: #888;
+    //             .mui-icon {
+    //                 font-size: 16px;
+    //                 color: #888;
+    //                 margin-right: 6px;
+    //             }
+    //         }
+    //     }
+        height: 50px;
+        padding: 0!important;
+        background: red;
+        .search-home{
+            float: left;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 20px;
+            color: #888;
+            display: inline-block;
+        }
+        .input-a{
+            display: inline-block;
+            position: absolute;
+            float: left;
+            padding: 0 50px;
+            margin: 10px 0;
+            height: 30px;
+            line-height: 30px;
+            width: 75%;
+            // width: 100%;
+            background: #fff;
+            border: 1px solid #888;
+            border-radius: 15px;
+            font-size: 14px;
+            color: #888;
+        }
+        .icon-fangdajing{
+            
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 20px;
+            color: #888;
+            display: inline-block;
         }
     }
+    
 }
 </style>
 <style lang="less" scoped>
@@ -89,8 +133,9 @@
         height: 100%;
     }
     .mui-fullscreen {
-        top: 100px;
-        margin-bottom: 50px;
+        top: 50px;
+        // top: 100px;
+        // margin-bottom: 50px;
     }
     
     .mui-col-xs-3,

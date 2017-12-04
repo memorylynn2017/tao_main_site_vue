@@ -45,6 +45,445 @@
         
     ],
 
+    "producttype": [
+        {
+            "typeid": 1,
+            "name": "女装",
+            "adimg": "https://m.360buyimg.com/mobilecms/s528x180_jfs/t1099/96/294528099/21413/1cb6c44f/55137bdbNfdce143e.jpg",
+            "adlink": "#",
+            "detail": [
+                {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1194/11949081/raw_1502969139.jpeg",
+                    "name": "连衣裙",
+                    "link": "#"
+                },
+                {
+                    "id": 101,
+                    "img": "https://pro.modao.cc/uploads3/images/1194/11949083/raw_1502969140.jpeg",
+                    "name": "T恤",
+                    "link": "#"
+                },
+                {
+                    "id": 102,
+                    "img": "https://pro.modao.cc/uploads3/images/1194/11949081/raw_1502969139.jpeg",
+                    "name": "雪纺衫",
+                    "link": "#"
+                },
+                {
+                    "id": 103,
+                    "img": "https://pro.modao.cc/uploads3/images/1194/11949145/raw_1502969456.jpeg",
+                    "name": "衬衫",
+                    "link": "#"
+                },
+                {
+                    "id": 104,
+                    "img": "https://pro.modao.cc/uploads3/images/1194/11949169/raw_1502969590.jpeg",
+                    "name": "外套",
+                    "link": "#"
+                },
+                {
+                    "id": 105,
+                    "img": "https://pro.modao.cc/uploads3/images/1194/11949187/raw_1502969649.jpeg",
+                    "name": "卫衣",
+                    "link": "#"
+                },
+                {
+                    "id": 106,
+                    "img": "https://pro.modao.cc/uploads3/images/1194/11949239/raw_1502969809.jpeg",
+                    "name": "毛针织衫",
+                    "link": "#"
+                },
+                {
+                    "id": 107,
+                    "img": "https://pro.modao.cc/uploads3/images/1194/11949317/raw_1502970094.jpeg",
+                    "name": "风衣",
+                    "link": "#"
+                },
+                {
+                    "id": 108,
+                    "img": "https://pro.modao.cc/uploads3/images/1194/11949353/raw_1502970190.jpeg",
+                    "name": "背心吊带",
+                    "link": "#"
+                }, 
+                {
+                    "id": 109,
+                    "img": "https://pro.modao.cc/uploads3/images/1249/12499702/raw_1504773129.jpeg",
+                    "name": "时尚套装",
+                    "link": "#"
+                }, 
+                {
+                    "id": 110,
+                    "img": "https://pro.modao.cc/uploads3/images/1249/12499424/raw_1504772888.jpeg",
+                    "name": "牛仔外套",
+                    "link": "#"
+                }, 
+                {
+                    "id": 111,
+                    "img": "https://pro.modao.cc/uploads3/images/1249/12499579/raw_1504773037.jpeg",
+                    "name": "牛仔裙",
+                    "link": "#"
+                }, 
+                {
+                    "id": 112,
+                    "img": "https://pro.modao.cc/uploads3/images/1249/12499001/raw_1504772562.jpeg",
+                    "name": "马甲",
+                    "link": "#"
+                }, 
+                {
+                    "id": 113,
+                    "img": "https://pro.modao.cc/uploads3/images/1249/12499830/raw_1504773225.jpeg",
+                    "name": "牛仔裤",
+                    "link": "#"
+                }, 
+                {
+                    "id": 114,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12500157/raw_1504773521.jpeg",
+                    "name": "职业女装",
+                    "link": "#"
+                }, 
+                {
+                    "id": 115,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12500015/raw_1504773352.jpeg",
+                    "name": "休闲裤",
+                    "link": "#"
+                }, 
+                {
+                    "id": 116,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12500016/raw_1504773353.jpeg",
+                    "name": "打底裤",
+                    "link": "#"
+                }, 
+                {
+                    "id": 117,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12500013/raw_1504773352.jpeg",
+                    "name": "西装裤",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "typeid": 2,
+            "name": "男装",
+            "adimg": "https://m.360buyimg.com/mobilecms/s528x180_jfs/t13876/44/1513615936/97477/7e56adde/5a212383Nc28e9495.jpg",
+            "adlink": "#",
+            "detail": [
+                {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502423/raw_1504775740.jpeg",
+                    "name": "卫衣",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502425/raw_1504775741.jpeg",
+                    "name": "夹克",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502428/raw_1504775741.jpeg",
+                    "name": "针织衫/毛衣",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502420/raw_1504775738.jpeg",
+                    "name": "运动套装",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502424/raw_1504775740.jpeg",
+                    "name": "风衣",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502426/raw_1504775741.jpeg",
+                    "name": "背心",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502430/raw_1504775742.jpeg",
+                    "name": "套装",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502433/raw_1504775743.jpeg",
+                    "name": "T恤",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502434/raw_1504775743.jpeg",
+                    "name": "衬衫",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502432/raw_1504775742.jpeg",
+                    "name": "西服",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502435/raw_1504775744.jpeg",
+                    "name": "POLO衫",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502438/raw_1504775745.jpeg",
+                    "name": "牛仔裤",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502439/raw_1504775745.jpeg",
+                    "name": "休闲裤",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502440/raw_1504775746.jpeg",
+                    "name": "西裤",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502441/raw_1504775746.jpeg",
+                    "name": "棉裤",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "typeid": 3,
+            "name": "童装",
+            "adimg": "https://m.360buyimg.com/mobilecms/s528x180_jfs/t10948/250/2210476487/200382/da06433/59f18923N528111b2.jpg",
+            "adlink": "#",
+            "detail": [
+                {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502423/raw_1504775740.jpeg",
+                    "name": "卫衣",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502425/raw_1504775741.jpeg",
+                    "name": "夹克",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502428/raw_1504775741.jpeg",
+                    "name": "针织衫/毛衣",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502420/raw_1504775738.jpeg",
+                    "name": "运动套装",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502424/raw_1504775740.jpeg",
+                    "name": "风衣",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502426/raw_1504775741.jpeg",
+                    "name": "背心",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502430/raw_1504775742.jpeg",
+                    "name": "套装",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502433/raw_1504775743.jpeg",
+                    "name": "T恤",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502434/raw_1504775743.jpeg",
+                    "name": "衬衫",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502432/raw_1504775742.jpeg",
+                    "name": "西服",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "typeid": 4,
+            "name": "内衣",
+            "adimg": "https://m.360buyimg.com/mobilecms/s528x180_jfs/t12883/21/1405215451/91817/3175b47d/5a1fef3eN2cb812c4.jpg",
+            "adlink": "#",
+            "detail": [
+                {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502423/raw_1504775740.jpeg",
+                    "name": "卫衣",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502425/raw_1504775741.jpeg",
+                    "name": "夹克",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502428/raw_1504775741.jpeg",
+                    "name": "针织衫/毛衣",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502420/raw_1504775738.jpeg",
+                    "name": "运动套装",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502424/raw_1504775740.jpeg",
+                    "name": "风衣",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502426/raw_1504775741.jpeg",
+                    "name": "背心",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502430/raw_1504775742.jpeg",
+                    "name": "套装",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502433/raw_1504775743.jpeg",
+                    "name": "T恤",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502434/raw_1504775743.jpeg",
+                    "name": "衬衫",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502432/raw_1504775742.jpeg",
+                    "name": "西服",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "typeid": 5,
+            "name": "鞋帽",
+            "adimg": "https://m.360buyimg.com/mobilecms/s528x180_jfs/t1363/77/1381395719/60705/ce91ad5c/55dd271aN49efd216.jpg",
+            "adlink": "#",
+            "detail": [
+                {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502423/raw_1504775740.jpeg",
+                    "name": "卫衣",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502425/raw_1504775741.jpeg",
+                    "name": "夹克",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502428/raw_1504775741.jpeg",
+                    "name": "针织衫/毛衣",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502420/raw_1504775738.jpeg",
+                    "name": "运动套装",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502424/raw_1504775740.jpeg",
+                    "name": "风衣",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502426/raw_1504775741.jpeg",
+                    "name": "背心",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502430/raw_1504775742.jpeg",
+                    "name": "套装",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502433/raw_1504775743.jpeg",
+                    "name": "T恤",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502434/raw_1504775743.jpeg",
+                    "name": "衬衫",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502432/raw_1504775742.jpeg",
+                    "name": "西服",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "typeid": 6,
+            "name": "箱包",
+            "adimg": "https://m.360buyimg.com/mobilecms/s528x180_jfs/t6550/46/2623210942/124871/794c5e89/5965f98eN0eef4a0f.jpg",
+            "adlink": "#",
+            "detail": [
+                {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502423/raw_1504775740.jpeg",
+                    "name": "卫衣",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502425/raw_1504775741.jpeg",
+                    "name": "夹克",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502428/raw_1504775741.jpeg",
+                    "name": "针织衫/毛衣",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502420/raw_1504775738.jpeg",
+                    "name": "运动套装",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502424/raw_1504775740.jpeg",
+                    "name": "风衣",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502426/raw_1504775741.jpeg",
+                    "name": "背心",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502430/raw_1504775742.jpeg",
+                    "name": "套装",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502433/raw_1504775743.jpeg",
+                    "name": "T恤",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502434/raw_1504775743.jpeg",
+                    "name": "衬衫",
+                    "link": "#"
+                }, {
+                    "id": 100,
+                    "img": "https://pro.modao.cc/uploads3/images/1250/12502432/raw_1504775742.jpeg",
+                    "name": "西服",
+                    "link": "#"
+                }
+            ]
+        }
+    ],
+
 
     "products":[
         {
@@ -60,7 +499,7 @@
             "colorlist":["蓝色", "白色", "粉色", "黑色", "天蓝色"],
             "sizelist":["S", "M", "L", "XL"],
             "update": "2017-08-17",
-            "desc": ""
+            "namec": ""
         },
         {
             "id": 2,
@@ -75,7 +514,7 @@
             "colorlist":["蓝色", "白色", "粉色", "黑色", "天蓝色"],
             "sizelist":["S", "M", "L", "XL"],
             "update": "2017-08-17",
-            "desc": ""
+            "namec": ""
         }
     ]
 }
