@@ -176,6 +176,10 @@
             .mui-table-view:before,.mui-table-view:after {
                 height: 0;
             }
+            .mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-object {
+                width: 60%;
+                max-width: 60%;
+            }
             .mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
                 font-size: 14px;
                 color: #323232;
