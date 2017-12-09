@@ -205,7 +205,9 @@ export default {
         this.id =this.$route.query.id;
     },
     mounted () {
-        this.getProductList();
+        this.$nextTick(function(){
+            this.getProductList();
+        })
     },
     methods:{
         getProductList(){
