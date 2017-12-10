@@ -498,8 +498,7 @@
             "price": "30.00",
             "colorlist":["蓝色", "白色", "粉色", "黑色", "天蓝色"],
             "sizelist":["S", "M", "L", "XL"],
-            "update": "2017-08-17",
-            "namec": ""
+            "update": "2017-08-17"
         },
         {
             "id": 2,
@@ -511,10 +510,9 @@
                 "http://gd4.alicdn.com/imgextra/i4/542905766/TB2sj.oeZPRfKJjSZFOXXbKEVXa_!!542905766.jpg"
             ],
             "price": "43.00",
-            "colorlist":["蓝色", "白色", "粉色", "黑色", "天蓝色"],
-            "sizelist":["S", "M", "L", "XL"],
-            "update": "2017-08-17",
-            "namec": ""
+            "colorlist":["蓝色", "白色", "粉色", "黑色"],
+            "sizelist":["S", "M", "L"],
+            "update": "2017-08-17"
         }
     ]
 }

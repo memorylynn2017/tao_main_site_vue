@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <!-- 头部 -->
-        <headBar :headTitle="headTitle"></headBar>
+        <headBar :headTitle="product.name"></headBar>
         <div class="mui-content product-detail mb50">
             <!-- 图片轮播 -->
             <div id="slider" class="mui-slider banner" >
@@ -13,7 +13,7 @@
                         </a>
                     </div>
 
-                    <div v-for="pic in piclist" class="mui-slider-item">
+                    <div v-for="pic in product.piclist" class="mui-slider-item">
                         <a href="javascript:;">
                             <img :src="pic">
                         </a>
@@ -27,13 +27,13 @@
                     </div>
                 </div>
                 <div class="mui-slider-indicator">
-                    <div v-for="(pic,index) in piclist" class="mui-indicator" :key="index" :class="{'mui-active': !index}"></div>
+                    <div v-for="(pic,index) in product.piclist" class="mui-indicator" :key="index" :class="{'mui-active': !index}"></div>
                 </div>
             </div>
             <div class="product-msg">
-                <p class="des">{{headTitle}}</p>
+                <p class="des">{{product.name}}</p>
                 <div class="msg1 qf">
-                    <span class="price fl">￥{{price}}</span>
+                    <span class="price fl">￥{{product.price}}</span>
                     <span class="vip fl">VIP (登录查看)</span>
                     <button class="mui-btn fr">找同款</button>
                 </div>
@@ -41,7 +41,7 @@
                     <span class="fl">货号 1591</span>
                     <span class="fl">销量 1</span>
                     <span class="fl">收藏 2</span>
-                    <span class="fr">{{ update }}上新</span>
+                    <span class="fr">{{ product.update }}上新</span>
                 </div>
             </div>
             <ul class="mui-table-view kucun server">
@@ -58,13 +58,13 @@
                 <li class="mui-table-view-cell">
                     <span class="label">颜色</span>
                     <span class="checkitem">
-                        <i v-for="color in colorlist">{{color}}</i>
+                        <i v-for="color in product.colorlist">{{color}}</i>
                     </span>
                 </li>
                 <li class="mui-table-view-cell">
                     <span class="label">尺码</span>
                     <span class="checkitem">
-                        <i v-for="size in sizelist">{{size}}</i>
+                        <i v-for="size in product.sizelist">{{size}}</i>
                     </span>
                 </li>
             </ul>
@@ -118,48 +118,42 @@
             </div>
         </div>
         <a href="/carthave" class="mui-icon iconfont icon-gouwuche addcart">
-            <span class="mui-badge mui-badge-danger">45</span>
+            <span class="mui-badge mui-badge-danger">451{{mycart.allnum}}</span>
         </a>
 
         <div id="picture" class="mui-popover mui-popover-action mui-popover-bottom" style="display: block!important;">
             <div class="checkbox">
                 <ul class="clearfix">
                     <!-- <li>蓝色(3)</li>
-                    <li>白色</li>
-                    <li>粉色(1)</li>
-                    <li>黑色</li>
                     <li>黄色</li> -->
-                    <li v-for="color in colorlist">{{ color }}</li>
+                    <li v-for="item in product.prolist" @click="selectColor(item)" :class="{'on':item.selected}">{{ item.color }}<span :class="{'mui-hidden':item.num==0}"> ({{ item.num }})</span></li>
                 </ul>
             </div>
-            <div class="numbox">
-                <div v-for="(size,index) in sizelist" :key="index" class="type clearfix">
-                    <span class="label mui-pull-left">{{ size }}</span>
+            <div v-for="item in product.prolist" class="numbox" :class="{'mui-hidden':!item.selected}">
+                <div v-for="(sizeitem,index) in item.sizelist" :key="index" class="type clearfix">
+                    <span class="label mui-pull-left">{{ sizeitem.name }}</span>
                     <div class="mui-numbox mui-pull-right" data-numbox-min='0'>
-                        <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
-                        <input class="mui-input-numbox" type="number" value="0" />
-                        <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+                        <button class="mui-btn mui-btn-numbox-minus" type="button" @click="compNum(sizeitem,-1)">-</button>
+                        <input class="mui-input-numbox" type="number" disabled v-model="sizeitem.num" />
+                        <button class="mui-btn mui-btn-numbox-plus" type="button" @click="compNum(sizeitem,1)">+</button>
                     </div>
                 </div>
-                <!-- <div class="type clearfix">
-                    <span class="label mui-pull-left">S</span>
-                    <div class="mui-numbox mui-pull-right" data-numbox-min='0'>
-                        <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
-                        <input class="mui-input-numbox" type="number" />
-                        <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
-                    </div>
-                </div> -->
             </div>
             <div class="checkresult">
                 <div class="mui-input-row">
                     <label>已选</label>
-                    <p class="check-con">蓝色: S/1件，M/1件，L/1件 <br/>粉色: M/1件</p>
                     <!-- <textarea id="textarea" placeholder="">蓝色: S/1件，M/1件，L/1件 粉色: M/1件</textarea> -->
+                    <div class="check-con">
+                        <ul class="clearfix">
+                            <!-- <li>蓝色: S/1件，M/1件，L/1件</li> -->
+                            <li v-for="item in product.showSelectPro">{{item}}</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="btnlist">
-                <a class="btn return" href="javascript:;">返回</a>
-                <a class="btn confirm" @click="confirm" href="javascript:;">确定(3)</a>
+                <a class="btn return" href="javascript:;" @click="goback()">返回</a>
+                <a class="btn confirm" @click="confirm" href="javascript:;">确定<span :class="{'mui-hidden': product.num==0}"> ( {{product.num}} ) </span></a>
             </div>
         </div>
 
@@ -187,15 +181,12 @@ export default {
     data() {
         return {
             id: 0,      //id
-            headTitle: '',  //导航标题
-            piclist: [],    //图片列表
             piclist_first: '',  //第一张
             piclist_last: '',   //最后一张
-            price: '',      //价格
-            colorlist: [],  //颜色列表
-            sizelist: [],   //尺寸列表
-            update: '',     //上架时间
 
+            product: {},    //产品数据
+            mycart: [],     //我的购物车
+            tt: 0
         }
     },
     components: {
@@ -206,10 +197,20 @@ export default {
     },
     mounted () {
         this.$nextTick(function(){
+            //读取商品信息
             this.getProductList();
+            //读取本地缓存
+            if(localStorage.getItem("mycar")){
+                this.mycart = JSON.parse(localStorage.getItem("mycar"));
+                console.log(this.mycart)
+            }else{
+                this.mycart = {"allnum": 0};
+                console.log(this.mycart)
+            }
         })
     },
     methods:{
+        //读取商品信息
         getProductList(){
             let _protocol = document.location.protocol;
             let _host = window.location.hostname;
@@ -219,23 +220,103 @@ export default {
                 var res = result.data;
                 for (var i=0;i<res.length; i++){
                     if (this.id == res[i].id){
-                        this.headTitle = res[i].name;
-                        this.piclist = res[i].piclist;
-                        this.piclist_first = res[i].piclist[0];
-                        this.piclist_last = res[i].piclist[res[i].piclist.length-1];
+                        this.product = res[i];
+                        this.piclist_first = this.product.piclist[0];
+                        this.piclist_last = this.product.piclist[this.product.piclist.length-1];
 
-                        this.price = res[i].price;
-                        this.colorlist = res[i].colorlist;
-                        this.sizelist = res[i].sizelist;
-                        this.update = res[i].update;
+                        this.$set(this.product, "prolist", []); //产品列表
+                        this.product.colorlist.forEach((value,index)=>{
+                            //new一个size数组
+                            let size_arr = [];
+                            this.product.sizelist.forEach((value,index)=>{
+                                size_arr.push({'name':value,'num':0});
+                            })
+                            this.product.prolist.push({
+                                'color': value,
+                                'sizelist': size_arr,
+                                'selected': false,
+                                'num': 0
+                            });
+                            //设置默认第一个选中
+                            this.product.prolist[0].selected = true;
+                        })
+                        this.$set(this.product, "num", 0);  //选中个数
+                        this.$set(this.product, "showSelectPro", []);   //选择商品列表
+
+                        console.log(this.product)
                     }
                 }
             })
         },
+        //选择颜色
+        selectColor(item){
+            this.product.prolist.forEach(function(value, index){
+                value.selected = false;
+            })
+            item.selected = true;
+        },
+        //计算件数（+，-）
+        compNum(item,flag){
+            if (flag>0){
+                item.num++;
+            }else{
+                item.num--;
+                if (item.num<0) item.num = 0;
+            }
+            this.compPro();
+        },
+        //计算选择商品列表
+        compPro(){
+            //每次计算先清空列表
+            this.product.showSelectPro = [];
+            this.product.prolist.forEach((item,index)=>{
+                let str = item.color + ": ";
+                let item_allnum = 0;
+                /*
+                给showSelectPro插入信息
+                */
+                item.sizelist.forEach((value,index)=>{
+                    //得到已选信息,只用来显示
+                    if (value.num > 0){
+                        str += value.name + "/" + value.num + "件，";
+                    }
+                    //计算款色个数
+                    item_allnum += value.num;
+                })
+                str = str.substr(0,str.length-1);
+                // 当前所选款色总数量>0
+                if (item_allnum>0){
+                    this.product.showSelectPro.push(str);
+                }
+
+                /*
+                给prolist参数中的num进行修改
+                */
+                this.product.prolist.forEach((curItem,index)=>{
+                    if (item.color == curItem.color){
+                        curItem.num = item_allnum;
+                    }
+                })
+
+                /*
+                设置num总个数
+                */
+                this.product.num = 0;
+                this.product.prolist.forEach((curItem,index)=>{
+                    this.product.num += curItem.num;
+                })
+                
+            })
+            // console.log(this.product.num);
+            // console.log(this.product);
+        },
+        goback(){
+            this.tt++;
+            console.log('返回');
+        },
         //确认商品
-        // confirm: ()=>{
         confirm (){
-            console.log('123qwe');
+            console.log('确定');
         }
     }
 }
@@ -428,6 +509,10 @@ export default {
             overflow: hidden;
             text-overflow:ellipsis;
             white-space: nowrap;
+            &.on{
+                color: #e51c23;
+                border: 1px solid #e51c23;
+            }
         }
     }
     .numbox {
@@ -565,12 +650,16 @@ export default {
         .mui-input-row .check-con{
             display: inline-block;
             width: 80%;
+            min-height: 50px;
             margin-bottom: 0;
             padding: 8px;
             border: 1px solid #e51c23;
             font-size: 14px;
             color: #323232;
             border-radius: 0;
+            >ul{
+                list-style: none;
+            }
         }
     }
     .btnlist{
