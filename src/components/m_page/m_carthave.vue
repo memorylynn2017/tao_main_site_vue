@@ -15,12 +15,12 @@
             <!-- 有 -->
             <div class="cart-have mui-block mt10 mui-block">
                 <h5 class="mui-content-padded cart-nav">
-                    <span class="mui-pull-left title">共有3款商品</span>
+                    <span class="mui-pull-left title">共有{{productNum}}款商品</span>
                     <span class="mui-icon iconfont icon-lajixiang mui-pull-right del"></span>
                 </h5>
                 <div class="mui-card cart-list">
                     <form class="mui-input-group">
-                        <div class="mui-input-row mui-checkbox mui-left cart-item">
+                        <!-- <div class="mui-input-row mui-checkbox mui-left cart-item">
                             <input name="checkbox" value="1" type="checkbox">
                             <div class="cart-item-con">
                                 <div class="media-pic">
@@ -40,44 +40,26 @@
                                     <a class="btn" href="javascript:;">修改</a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="mui-input-row mui-checkbox mui-left cart-item">
+                        </div> -->
+                        <div v-for="item in mycart.list" class="mui-input-row mui-checkbox mui-left cart-item">
                             <input name="checkbox" value="1" type="checkbox">
                             <div class="cart-item-con">
                                 <div class="media-pic">
-                                    <img src="https://pro.modao.cc/uploads3/images/1190/11902879/raw_1502867980.jpeg" alt="">
-                                    <p>￥
-                                        <span class="fs-16">48</span> .00</p>
+                                    <img :src="item.pic" alt="">
+                                    <p>￥<span class="fs-16">{{item.price}}</span></p>
                                 </div>
                                 <div class="media-body">
-                                    <p class="title mui-ellipsis">1591#蕾丝连衣裙蕾丝1591#蕾丝连衣裙蕾丝1591#蕾丝连衣裙蕾丝</p>
-                                    <span class="num">4件</span>
+                                    <p class="title mui-ellipsis">{{item.name}}</p>
+                                    <span class="num">{{item.num}}件</span>
                                     <div class="desc">
-                                        粉色:M/1件;L/1件;<br/> 粉色:M/1件;L/1件;
+                                        <!-- 粉色:M/1件;L/1件;
+                                        <br/>粉色:M/1件;L/1件; -->
+                                        <div v-for="showitem in item.showSelectPro"><span>{{showitem}}</span><br/></div>
                                     </div>
                                     <a class="btn" href="javascript:;">修改</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="mui-input-row mui-checkbox mui-left cart-item">
-                            <input name="checkbox" value="1" type="checkbox">
-                            <div class="cart-item-con">
-                                <div class="media-pic">
-                                    <img src="https://pro.modao.cc/uploads3/images/1190/11902879/raw_1502867980.jpeg" alt="">
-                                    <p>￥
-                                        <span class="fs-16">48</span> .00</p>
-                                </div>
-                                <div class="media-body">
-                                    <p class="title mui-ellipsis">1591#蕾丝连衣裙蕾丝1591#蕾丝连衣裙蕾丝1591#蕾丝连衣裙蕾丝</p>
-                                    <span class="num">4件</span>
-                                    <div class="desc">
-                                        粉色:M/1件;L/1件;<br/> 粉色:M/1件;L/1件;
-                                    </div>
-                                    <a class="btn" href="javascript:;">修改</a>
-                                </div>
-                            </div>
-                        </div>
-
                     </form>
                 </div>
             </div>
@@ -87,10 +69,10 @@
         <nav id="footer_settlement" class="mui-bar mui-bar-tab te-settlement mui-block">
             <div class="mui-input-row mui-checkbox mui-left mui-pull-left settlement-all">
                 <input name="checkbox" value="1" type="checkbox">
-                <span>全选 合计: ￥552.00</span>
+                <span>全选 合计: ￥{{allmoney}}</span>
             </div>
             <a class="settlement-btn mui-pull-right" href="/orderconfirm">
-                <span>去结算(13)</span>
+                <span>去结算({{mycart.allnum}})</span>
             </a>
         </nav>
     </div>
@@ -103,12 +85,45 @@ export default {
     name: 'app',
     data() {
         return {
-            headTitle: '进货车'
+            headTitle: '进货车',
+            mycart: {},     //我的购物车
+            productNum: 0,
+            allmoney: 0,    //总金额
         }
     },
     components: {
         headBar,
         footerBar
+    },
+    computed:{
+        //商品个数
+        // productNum: function(){
+        //     return this.mycart.list.length;
+        // }
+    },
+    mounted(){
+        this.$nextTick(function(){
+            //读取本地缓存
+            if(localStorage.getItem("mycart")){
+                this.mycart = JSON.parse(localStorage.getItem("mycart"));
+                this.bindCart();
+                
+            }else{
+                this.mycart = {"allnum": 0, "list": []};
+                localStorage.setItem("mycart",JSON.stringify(this.mycart));           
+            }
+        })
+    },
+    methods:{
+        bindCart(){
+            console.log(this.mycart)
+            //款色个数
+            this.productNum = this.mycart.list.length;
+            //总价
+            this.mycart.list.forEach(element => {
+                this.allmoney += element.num * element.price;
+            });
+        },
     }
 }
 </script>

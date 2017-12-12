@@ -118,7 +118,7 @@
             </div>
         </div>
         <a href="/carthave" class="mui-icon iconfont icon-gouwuche addcart">
-            <span class="mui-badge mui-badge-danger">451{{mycart.allnum}}</span>
+            <span class="mui-badge mui-badge-danger" :class="{'mui-hidden':mycart.allnum==0}">{{mycart.allnum}}</span>
         </a>
 
         <div id="picture" class="mui-popover mui-popover-action mui-popover-bottom" style="display: block!important;">
@@ -180,13 +180,12 @@ export default {
     name: 'app',
     data() {
         return {
-            id: 0,      //id
+            id: 0,      //商品id
             piclist_first: '',  //第一张
             piclist_last: '',   //最后一张
 
             product: {},    //产品数据
-            mycart: [],     //我的购物车
-            tt: 0
+            mycart: {},     //我的购物车
         }
     },
     components: {
@@ -200,12 +199,19 @@ export default {
             //读取商品信息
             this.getProductList();
             //读取本地缓存
-            if(localStorage.getItem("mycar")){
-                this.mycart = JSON.parse(localStorage.getItem("mycar"));
-                console.log(this.mycart)
+            if(localStorage.getItem("mycart")){
+                // console.log('yes')
+                // console.log('购物车：'+this.mycart)
+                // console.log('购物车：'+JSON.stringify(this.mycart))  
+
+                this.mycart = JSON.parse(localStorage.getItem("mycart"));
             }else{
-                this.mycart = {"allnum": 0};
-                console.log(this.mycart)
+                // console.log('no')
+                // console.log('购物车：'+this.mycart)
+                // console.log('购物车：'+JSON.stringify(this.mycart))  
+
+                this.mycart = {"allnum": 0, "list": []};
+                localStorage.setItem("mycart",JSON.stringify(this.mycart));           
             }
         })
     },
@@ -242,8 +248,6 @@ export default {
                         })
                         this.$set(this.product, "num", 0);  //选中个数
                         this.$set(this.product, "showSelectPro", []);   //选择商品列表
-
-                        console.log(this.product)
                     }
                 }
             })
@@ -254,6 +258,21 @@ export default {
                 value.selected = false;
             })
             item.selected = true;
+        },
+        //克隆对象
+        cloneObj(obj){
+            var str, newobj = obj.constructor === Array ? [] : {};
+            if(typeof obj !== 'object'){
+                return;
+            } else if(window.JSON){
+                str = JSON.stringify(obj), //序列化对象
+                newobj = JSON.parse(str); //还原
+            } else {
+                for(var i in obj){
+                    newobj[i] = typeof obj[i] === 'object' ? cloneObj(obj[i]) : obj[i]; 
+                }
+            }
+            return newobj;
         },
         //计算件数（+，-）
         compNum(item,flag){
@@ -267,14 +286,26 @@ export default {
         },
         //计算选择商品列表
         compPro(){
+            this.comp_colortype(this.product);
+            /*
+            设置num总个数
+            */
+            this.product.num = 0;
+            this.product.prolist.forEach((curItem,index)=>{
+                this.product.num += curItem.num;
+            })
+        },
+        //计算商品款色的showSelectPro，num的信息
+        //item当前的商品款色，updateObj是需要更新的对象
+        comp_colortype(updateObj){
             //每次计算先清空列表
-            this.product.showSelectPro = [];
-            this.product.prolist.forEach((item,index)=>{
-                let str = item.color + ": ";
-                let item_allnum = 0;
+            updateObj.showSelectPro = [];
+            updateObj.prolist.forEach((item,index)=>{
                 /*
                 给showSelectPro插入信息
                 */
+                let str = item.color + ": ";
+                let item_allnum = 0;
                 item.sizelist.forEach((value,index)=>{
                     //得到已选信息,只用来显示
                     if (value.num > 0){
@@ -286,37 +317,107 @@ export default {
                 str = str.substr(0,str.length-1);
                 // 当前所选款色总数量>0
                 if (item_allnum>0){
-                    this.product.showSelectPro.push(str);
+                    updateObj.showSelectPro.push(str);
                 }
 
                 /*
                 给prolist参数中的num进行修改
                 */
-                this.product.prolist.forEach((curItem,index)=>{
+                updateObj.prolist.forEach((curItem,index)=>{
                     if (item.color == curItem.color){
                         curItem.num = item_allnum;
                     }
                 })
-
-                /*
-                设置num总个数
-                */
-                this.product.num = 0;
-                this.product.prolist.forEach((curItem,index)=>{
-                    this.product.num += curItem.num;
-                })
-                
             })
-            // console.log(this.product.num);
-            // console.log(this.product);
         },
+        //返回
         goback(){
-            this.tt++;
-            console.log('返回');
+            //关闭弹框
+            $('.mui-backdrop').removeClass('mui-active').remove();
+            $('.mui-popover').removeClass('mui-active');
         },
         //确认商品
-        confirm (){
-            console.log('确定');
+        confirm(){
+            /*
+            更新购物车的商品
+            */
+            //是否存在此商品，true为存在，false为不存在
+            let isProduct = false;
+            this.mycart.list.forEach((cartItem,index)=>{
+                //存在，修改
+                if (cartItem.id == this.product.id){
+                    console.log('存在');
+                    isProduct = true;
+
+                    //合并上款色数量
+                    for (let i=0; i<cartItem.prolist.length; i++){
+                        let sizelist = cartItem.prolist[i].sizelist;
+                        let p_sizelist = this.product.prolist[i].sizelist;
+                        for (let j=0; j<sizelist.length; j++){
+                            sizelist[j].num += p_sizelist[j].num;
+                        }
+                    }
+
+                    //计算
+                    this.comp_colortype(cartItem);
+                    
+                    this.mycart.list.forEach((cartitem,index)=>{
+                        let cartitem_num = 0;
+                        cartitem.prolist.forEach((item,index)=>{
+                            cartitem_num += item.num;
+                        })
+                        cartitem.num = cartitem_num;
+                    })
+
+                    /*
+                    设置allnum总个数
+                    */
+                    this.mycart.allnum = 0;
+                    this.mycart.list.forEach((curItem,index)=>{
+                        this.mycart.allnum += curItem.num;
+                    })
+                }
+            })
+
+            //不存在，添加
+            if (!isProduct){
+                console.log('不存在')
+                let _product = this.cloneObj(this.product);
+                let item = {
+                    id: _product.id,
+                    name: _product.name,
+                    pic: _product.pic,
+                    price: _product.price,
+                    num: _product.num,
+                    prolist: _product.prolist,
+                    showSelectPro: _product.showSelectPro
+                }
+                this.mycart.list.push(item);
+            }
+
+            //更新购物车中的总数allnum
+            let _allnum = 0;
+            this.mycart.list.forEach((value,index)=>{
+                _allnum += value.num;
+            })
+            this.mycart.allnum = _allnum;
+            localStorage.setItem("mycart",JSON.stringify(this.mycart));
+
+            /*
+            清空当前选择商品
+            */
+            this.product.num = 0;
+            this.product.showSelectPro = [];
+            this.product.prolist.forEach((value,index)=>{
+                value.num = 0;
+                value.sizelist.forEach((sizeitem,index)=>{
+                    sizeitem.num = 0;
+                })
+            })
+
+            console.log(this.mycart)
+            //关闭弹框
+            this.goback();
         }
     }
 }
@@ -351,6 +452,7 @@ export default {
     .mui-badge{
         margin-left: -20px;
         padding: 1px;
+        min-width: 15px;
     }
 }
 .mui-tab-item{
